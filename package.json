@@ -1,9 +1,9 @@
 {
-  "name": "bookmanager-web",
+  "name": "ontimize-web-ngx-jee-seed",
   "version": "8.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 4200 -o --host localhost",
+    "start": "ng serve --port 4299",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -12,7 +12,7 @@
   },
   "private": true,
   "engines": {
-    "node": "^14"
+    "node": "^12"
   },
   "dependencies": {
     "@angular/animations": "~8.2.14",
