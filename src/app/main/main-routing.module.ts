@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuardService } from 'ontimize-web-ngx';
+
 import { BooksModule } from './books/books.module';
 import { MainComponent } from './main.component';
+import { CustomersModule } from './customers/customers.module';
 
 export function loadBooksModule() {
   return BooksModule;
+}
+
+export function loadCustomersModule() {
+  return CustomersModule;
 }
 
 export const routes: Routes = [
@@ -19,6 +25,10 @@ export const routes: Routes = [
       {
         path: 'books',
         loadChildren: loadBooksModule
+      },
+      {
+        path: 'customers',
+        loadChildren: loadCustomersModule
       }
     ]
   }
