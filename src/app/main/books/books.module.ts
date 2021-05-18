@@ -4,6 +4,7 @@ import { OntimizeWebModule } from "ontimize-web-ngx";
 import { BooksRoutingModule } from './books-routing.module';
 import { BooksHomeComponent } from './books-home/books-home.component';
 import { BooksDetailsComponent } from './books-details/books-details.component';
+import { BooksAddComponent } from './books-add/books-add.component';
 
 
 @NgModule({
@@ -13,6 +14,6 @@ import { BooksDetailsComponent } from './books-details/books-details.component';
     OntimizeWebModule,
     BooksRoutingModule
   ],
-  declarations: [BooksHomeComponent, BooksDetailsComponent]
+  declarations: [BooksHomeComponent, BooksDetailsComponent, BooksAddComponent]
 })
 export class BooksModule { }
