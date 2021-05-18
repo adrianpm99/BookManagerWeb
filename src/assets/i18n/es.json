@@ -15,7 +15,7 @@
   "ERROR_PASS_REQUIRED": "Contraseña incorrecta.",
   "ERROR_USER_PASS_INCORRECT": "Usuario o contraseña incorrecta.",
   "BOOKS":"Libros",
-  "BOOKID":"ID",
+  "BOOKID":"LIBRO ID",
   "BOOKTITLE":"TITULO",
   "BOOKDESCRIPTION":"DESCRIPCION",
   "BOOKAUTHOR":"AUTOR",
@@ -26,5 +26,8 @@
   "BOOKPUBLICATIONYEAR":"AÑO DE PUBLICACION",
   "CUSTOMERS": "Usuarios",
   "CUSTOMERNAME": "Nombre del Usuario",
-  "CUSTOMERSURNAME": "Apellido del Usuario"
+  "CUSTOMERSURNAME": "Apellido del Usuario",
+  "RESERVATIONS": "Reservas",
+  "RESERVATIONID": "RESERVA ID",
+  "CUSTOMERID":"USUARIO ID"
 }

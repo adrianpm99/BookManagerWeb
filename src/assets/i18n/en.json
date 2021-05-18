@@ -15,7 +15,7 @@
   "ERROR_PASS_REQUIRED": "Incorrect password.",
   "ERROR_USER_PASS_INCORRECT": "Invalid username or password.",
   "BOOKS": "Books",
-  "bookid":"ID",
+  "BOOK":"Book ID",
   "BOOKTITLE":"TITLE",
   "BOOKDESCRIPTION":"DESCRIPTION",
   "BOOKAUTHOR":"AUTHOR",
@@ -26,5 +26,8 @@
   "BOOKPUBLICATIONYEAR":"PUBLICATION YEAR",
   "CUSTOMERS": "Users",
   "CUSTOMERNAME": "User Name",
-  "CUSTOMERSURNAME": "User Surname"
+  "CUSTOMERSURNAME": "User Surname",
+  "RESERVATIONS": "Reservations",
+  "RESERVATIONID":"RESERVATION ID",
+  "CUSTOMERID" :"CUSTOMER ID"
 }
