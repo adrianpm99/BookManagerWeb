@@ -1,0 +1,25 @@
+<o-form editable-detail="no" service="books" entity="book" keys="BOOKID" header-actions="R;I;U;D"
+  show-header-navigation="no">
+  <o-row>
+    <o-text-input attr="BOOKID" sql-type="INTEGER"></o-text-input>
+  </o-row>
+  <o-row>
+    <o-integer-input attr="BOOKISBN" class="input-padding"></o-integer-input>
+  </o-row>
+  <o-column title-label="BOOK_DETAILS" fxFlex>
+    <o-row>
+      <o-text-input class="input-padding" attr="BOOKTITLE"></o-text-input>
+      <o-text-input class="input-padding" attr="BOOKAUTHOR"></o-text-input>
+      <o-integer-input attr="BOOKPUBLICATIONYEAR"></o-integer-input>
+    </o-row>
+    <o-row>
+      <o-text-input class="input-padding" attr="BOOKEDITORIAL"></o-text-input>
+      <o-integer-input attr="BOOKEDITION" class="input-padding"></o-integer-input>
+      <o-integer-input attr="BOOKPAGENUMBER"></o-integer-input>
+    </o-row>
+    <o-row>
+      <o-textarea-input attr="BOOKDESCRIPTION" fxFlex=40></o-textarea-input>
+    </o-row>
+  </o-column>
+  </o-row>
+</o-form>
