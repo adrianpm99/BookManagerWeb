@@ -14,10 +14,11 @@
         <o-text-input attr="CUSTOMERID" sql-type="INTEGER" enabled="no" fxFlex></o-text-input>
       </o-row>
     </o-column>
+
     <o-column title-label="COPY_INFORMATION" fxFlex>
       <o-row>
         <o-text-input attr="COPYID" class="input-padding" attr="COPYID" fxFlex="40" required="yes" service="copies"
-          entity="copy" keys="COPYID" columns="COPYID" visible-columns="COPYID" value-column="COPYID" fxFlex>
+          entity="copy" keys="COPYID" columns="COPYID;BOOKID;COPYNOTES" visible-columns="COPYID" value-column="COPYID" fxFlex>
         </o-text-input>
       </o-row>
     </o-column>
