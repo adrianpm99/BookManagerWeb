@@ -4,6 +4,7 @@ import { OntimizeWebModule } from "ontimize-web-ngx";
 import { ReservationsRoutingModule } from './reservations-routing.module';
 
 import { ReservationsHomeComponent } from "./reservations-home/reservations-home.component";
+import { ReservationsDetailComponent } from './reservations-detail/reservations-detail.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ReservationsHomeComponent } from "./reservations-home/reservations-home
     ReservationsRoutingModule
   ],
   declarations: [
-    ReservationsHomeComponent
+    ReservationsHomeComponent,
+    ReservationsDetailComponent
   ]
 })
 export class ReservationsModule { }
