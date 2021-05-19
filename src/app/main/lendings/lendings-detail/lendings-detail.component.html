@@ -1,0 +1,33 @@
+<o-form service="lendings" entity="lending" keys="LENDINGID" header-actions="R;I" show-header-navigation="yes">
+  <o-text-input attr="LENDINGID" sql-type="INTEGER" enabled="no"></o-text-input>
+  <o-row>
+    <o-column title-label="CUSTOMER_PERSONAL_LENDING_INFORMATION" fxFlex>
+      <o-row>
+        <o-text-input attr="CUSTOMERNAME" class="input-padding" attr="NAME" fxFlex="40" required="yes" service="customers"
+          entity="customer" keys="CUSTOMERID" columns="CUSTOMERID;CUSTOMERNAME;CUSTOMERSURNAME"
+          visible-columns="CUSTOMERNAME" value-column="CUSTOMERNAME" fxFlex>
+        </o-text-input>
+        <o-text-input attr="CUSTOMERSURNAME" class="input-padding" attr="SURNAME" fxFlex="40" required="yes" service="customers"
+          entity="customer" keys="CUSTOMERID" columns="CUSTOMERID;CUSTOMERNAME;CUSTOMERSURNAME"
+          visible-columns="CUSTOMERSURNAME" value-column="CUSTOMERSURNAME" fxFlex>
+        </o-text-input>
+        <o-text-input attr="CUSTOMERID" sql-type="INTEGER" enabled="no" fxFlex></o-text-input>
+      </o-row>
+    </o-column>
+    <o-column title-label="COPY_INFORMATION" fxFlex>
+      <o-row>
+        <o-text-input attr="COPYID" class="input-padding" attr="COPYID" fxFlex="40" required="yes" service="copies"
+          entity="copy" keys="COPYID" columns="COPYID" visible-columns="COPYID" value-column="COPYID" fxFlex>
+        </o-text-input>
+      </o-row>
+    </o-column>
+    <o-column title-label="LENDING_INFORMATION" fxFlex>
+      <o-row>
+        <o-date-input attr="LENDINGDATE" label="LENDING_DATE"></o-date-input>
+        <o-date-input attr="LENDINGDEADLINE" label="LENDING_DEADLINE"></o-date-input>
+        <o-date-input attr="LENDINRETURNDATE" label="LENDING_RETURN_DATE" read-only="yes" required="yes"></o-date-input>
+        <o-text-input attr="LENDINGNOTES" fxFlex></o-text-input>
+      </o-row>
+    </o-column>
+  </o-row>
+</o-form>
