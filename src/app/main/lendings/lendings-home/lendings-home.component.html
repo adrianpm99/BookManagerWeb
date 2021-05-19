@@ -1,0 +1,9 @@
+<div fxFlex>
+  <o-table fxFlex attr="lendingsTable" service="lendings" entity="lending" keys="LENDINGID"
+    columns="LENDINGID;CUSTOMERID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE;LENDINGNOTES"
+    visible-columns="LENDINGID;CUSTOMERID;LENDINGDATE" query-rows="20">
+    <o-table-column attr="LENDINGDATE" title="LENDINGDATE" type="date" format="LL" ></o-table-column>
+
+
+  </o-table>
+</div>

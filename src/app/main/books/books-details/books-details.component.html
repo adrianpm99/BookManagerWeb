@@ -21,4 +21,11 @@
       <o-textarea-input attr="BOOKDESCRIPTION" fxFlex=40></o-textarea-input>
     </o-row>
   </o-column>
+  <br>
+  <div fxFlex>
+    <o-table fxFlex attr="copysTable" title="LISTADO DE EJEMPLARES" service="copys" entity="copy" keys="COPYID"
+      columns="COPYID;BOOKID;COPYNOTES" visible-columns="COPYID;COPYNOTES" query-rows="20" quick-filter="false"
+      export-button="false" delete-button="false" refresh-button="false" show-title="true" parent-keys="BOOKID">
+    </o-table>
+  </div>
 </o-form>

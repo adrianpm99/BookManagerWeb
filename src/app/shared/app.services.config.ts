@@ -7,6 +7,11 @@ export const SERVICE_CONFIG: Object = {
   },
   'reservations': {
     'path': '/reservations'
+  },
+  'copys': {
+    'path': '/copys'
+  },
+  'lendings': {
+    'path': '/lendings'
   }
-
 };
