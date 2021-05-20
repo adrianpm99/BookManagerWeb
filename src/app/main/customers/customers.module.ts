@@ -4,6 +4,7 @@ import { OntimizeWebModule } from "ontimize-web-ngx";
 import { CustomersRoutingModule } from './customers-routing.module';
 import { CustomersHomeComponent } from './customers-home/customers-home.component';
 import { CustomersDetailComponent } from './customers-detail/customers-detail.component';
+import { CustomersAddComponent } from './customers-add/customers-add.component';
 
 
 @NgModule({
@@ -12,6 +13,6 @@ import { CustomersDetailComponent } from './customers-detail/customers-detail.co
     OntimizeWebModule,
     CustomersRoutingModule
   ],
-  declarations: [CustomersHomeComponent, CustomersDetailComponent]
+  declarations: [CustomersHomeComponent, CustomersDetailComponent, CustomersAddComponent]
 })
 export class CustomersModule { }
