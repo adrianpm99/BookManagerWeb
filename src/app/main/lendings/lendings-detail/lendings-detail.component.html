@@ -1,0 +1,29 @@
+<o-form #testForm service="lendings" entity="lendingDetails" keys="LENDINGID" editable-detail="no" header-actions="R;I;U;D">
+  <h1 class="hola">hola</h1>
+  <o-text-input attr="LENDINGID" sql-type="INTEGER" enabled="no"></o-text-input>
+  <o-column title-label="CUSTOMER_PERSONAL_LENDING_INFORMATION" fxFlex>
+    <o-row>
+      <o-text-input attr="CUSTOMERNAME" class="input-padding"fxFlex></o-text-input>
+      <o-text-input attr="CUSTOMERSURNAME" class="input-padding" fxFlex></o-text-input>
+      <o-integer-input attr="CUSTOMERID_LENDING" fxFlex></o-integer-input>
+    </o-row>
+  </o-column>
+  <o-column title-label="LENDING_INFORMATION" fxFlex>
+    <o-row>
+      <o-date-input attr="LENDINGDATE"></o-date-input>
+    </o-row>
+    <o-row>
+      <o-date-input attr="LENDINGDEADLINE" ></o-date-input>
+    </o-row>
+    <o-row>
+      <o-date-input attr="LENDINGRETURNDATE" read-only="no"></o-date-input>
+    </o-row>
+    <o-row>
+      <o-text-input attr="LENDINGNOTES" read-only="no" fxFlex></o-text-input>
+    </o-row>
+  </o-column>
+  <o-table fxFlex attr="listCopies" title="LISTADO DE EJEMPLARES" service="lendings" entity="copiesFromLending"
+    keys="LENDINGID" columns="LENDINGID;COPYID;COPYNOTES;BOOKTITLE" parent-keys="LENDINGID"
+    visible-columns="COPYID;BOOKTITLE;COPYNOTES" show-title="true">
+  </o-table>
+</o-form>
