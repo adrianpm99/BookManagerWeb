@@ -3,10 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { LendingsHomeComponent } from "./lendings-home/lendings-home.component";
 //import { LendingsDetailComponent } from './lendings-detail/lendings-detail.component';
 //import { LendingsEditComponent } from './lendings-edit/lendings-edit.component';
-//import { LendingsAddComponent } from './lendings-add/lendings-add.component';
+import { LendingsAddComponent } from './lendings-add/lendings-add.component';
 
-const routes: Routes = [{ path: '', component: LendingsHomeComponent }
-//{ path: 'add', component: LendingsAddComponent },
+const routes: Routes = [{ path: '', component: LendingsHomeComponent },
+{ path: 'new', component: LendingsAddComponent }
 //{ path: ':lendingid', component: LendingsDetailComponent },
 //{ path: ':lendingid/edit', component: LendingsEditComponent }
 ];

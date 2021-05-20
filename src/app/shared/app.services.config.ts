@@ -13,5 +13,8 @@ export const SERVICE_CONFIG: Object = {
   },
   'lendings': {
     'path': '/lendings'
+  },
+  'copylendings': {
+    'path': '/copylendings'
   }
 };

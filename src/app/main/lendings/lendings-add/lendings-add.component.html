@@ -1,0 +1,18 @@
+<o-form service="lendings" entity="lending" keys="LENDINGID" header-actions="R;I;U" show-header-navigation="no">
+  <o-row>
+    <o-column title-label="LENDING_INFORMATION" fxFlex>
+      <o-row>
+        <o-integer-input class="input-padding" attr="CUSTOMERID" fxFlex="40" required="yes"></o-integer-input>
+      </o-row>
+      <o-row>
+        <o-date-input attr="LENDINGDATE" class="input-padding" fxFlex="40" required="yes"></o-date-input>
+        <o-date-input attr="LENDINGDEADLINE" class="input-padding" fxFlex="40" required="yes"></o-date-input>
+        <o-date-input attr="LENDINGRETURNDATE" class="input-padding" fxFlex="40"></o-date-input>
+      </o-row>
+      <o-row>
+        <o-textarea-input attr="LENDINGNOTES" fxFlex></o-textarea-input>
+      </o-row>
+    </o-column>
+  </o-row>
+</o-form>
+
