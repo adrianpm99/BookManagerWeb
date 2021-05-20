@@ -1,0 +1,12 @@
+<o-form service="customers" entity="customer" keys="CUSTOMERID"
+ header-actions="R;I;U;D" show-header-navigation="no">
+
+<o-column title="{{ CUSTOMER_DETAILS | oTranslate }}" fxFlex>
+  <o-row>
+    <o-text-input attr="CUSTOMERNAME" class="input-padding"></o-text-input>
+  </o-row>
+  <o-row>
+    <o-text-input attr="CUSTOMERSURNAME" class="input-padding"></o-text-input>
+  </o-row>
+</o-column>
+</o-form>

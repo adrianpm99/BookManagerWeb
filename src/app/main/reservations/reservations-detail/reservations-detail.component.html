@@ -1,0 +1,17 @@
+<o-form service="reservations" entity="reservationDetail" keys="RESERVATIONID" header-actions="R;I;U;D" show-header-navigation="no">
+  <o-text-input attr="RESERVATIONID" sql-type="INTEGER" enabled="no"></o-text-input>
+  <o-row>
+    <o-column title-label="RESERVATION_INFORMATION" fxFlex>
+      <o-row>
+        <o-integer-input attr="B_BOOKID" class="input-padding" fxFlex></o-integer-input>
+        <o-text-input attr="BOOKTITLE" class="input-padding" fxFlex></o-text-input>
+        <o-text-input attr="BOOKAUTHOR" class="input-padding" fxFlex></o-text-input>
+      </o-row>
+      <o-row>
+        <o-integer-input attr="C_CUSTOMERID" fxFlex></o-integer-input>
+        <o-text-input attr="CUSTOMERNAME" fxFlex></o-text-input>
+        <o-text-input attr="CUSTOMERSURNAME" fxFlex></o-text-input>
+      </o-row>
+    </o-column>
+  </o-row>
+</o-form>
