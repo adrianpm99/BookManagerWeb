@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { BooksAddComponent } from '../books/books-add/books-add.component';
 
 
 @Component({
