@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OFormComponent, OQueryDataArgs, OTableComponent } from 'ontimize-web-ngx';
+
 
 @Component({
   selector: 'app-lendings-detail',
