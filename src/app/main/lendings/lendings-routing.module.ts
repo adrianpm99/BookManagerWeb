@@ -5,15 +5,11 @@ import { LendingsDetailComponent } from "./lendings-detail/lendings-detail.compo
 import { LendingsAddComponent } from './lendings-add/lendings-add.component';
 
 
-const routes: Routes = [{
-  path : '',
-  component: LendingsHomeComponent
-},
-{
-  path: ":LENDINGID",
-  component: LendingsDetailComponent
-},
-{ path: 'new', component: LendingsAddComponent }];
+const routes: Routes = [
+  {path : '',component: LendingsHomeComponent},
+  {path: 'new', component: LendingsAddComponent },
+  {path: ":LENDINGID",component: LendingsDetailComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

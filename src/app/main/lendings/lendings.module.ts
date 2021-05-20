@@ -8,8 +8,8 @@ import { LendingsDetailComponent } from './lendings-detail/lendings-detail.compo
 
 @NgModule({
 
-  declarations: [LendingsDetailComponent,
-    LendingsHomeComponent, LendingsAddComponent
+  declarations: [
+    LendingsHomeComponent, LendingsAddComponent, LendingsDetailComponent
   ],
   imports: [
     CommonModule,
