@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -8,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LendingsDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,
+    private actRoute: ActivatedRoute) { }
 
   ngOnInit() {
+  }
+
+  clickAddReservation(){
+    this.router.navigate(['main/reservations/new']);
   }
 
 }

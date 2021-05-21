@@ -5,6 +5,7 @@ import { ReservationsRoutingModule } from './reservations-routing.module';
 
 import { ReservationsHomeComponent } from "./reservations-home/reservations-home.component";
 import { ReservationsDetailComponent } from './reservations-detail/reservations-detail.component';
+import { ReservationsAddComponent } from './reservations-add/reservations-add.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ReservationsDetailComponent } from './reservations-detail/reservations-
   ],
   declarations: [
     ReservationsHomeComponent,
-    ReservationsDetailComponent
+    ReservationsDetailComponent,
+    ReservationsAddComponent,
   ]
 })
 export class ReservationsModule { }

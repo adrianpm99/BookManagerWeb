@@ -46,5 +46,6 @@
   "R_CUSTOMERID":"CUSTOMER ID",
   "COPYID": "COPY ID",
   "COPYNOTES": "COPY NOTES",
-  "NEW LENDING": "NEW LENDING"
+  "NEW LENDING": "New Lending",
+  "NEW RESERVATION":"New Reservation"
 }

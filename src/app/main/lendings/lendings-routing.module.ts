@@ -6,6 +6,7 @@ import { LendingsAddComponent } from './lendings-add/lendings-add.component';
 import { CopylendingsAddComponent } from './copylendings-add/copylendings-add.component';
 
 
+
 const routes: Routes = [
   {path : '',component: LendingsHomeComponent},
   {path: 'new', component: LendingsAddComponent },
