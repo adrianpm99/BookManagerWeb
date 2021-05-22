@@ -6,8 +6,7 @@ import { OntimizeWebModule } from 'ontimize-web-ngx';
   imports: [
     OntimizeWebModule
   ],
-  declarations: [
-  ],
+  declarations: [],
   exports: [
     CommonModule
   ]
