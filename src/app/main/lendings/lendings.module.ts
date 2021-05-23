@@ -6,11 +6,13 @@ import { LendingsHomeComponent } from './lendings-home/lendings-home.component';
 import { LendingsAddComponent } from './lendings-add/lendings-add.component';
 import { LendingsDetailComponent } from './lendings-detail/lendings-detail.component';
 import { CopylendingsAddComponent } from './copylendings-add/copylendings-add.component';
+import { LendingsCloseComponent } from './lendings-close/lendings-close.component';
 
 @NgModule({
 
   declarations: [
-    LendingsHomeComponent, LendingsAddComponent, CopylendingsAddComponent, LendingsDetailComponent
+    LendingsHomeComponent, LendingsAddComponent, CopylendingsAddComponent, LendingsDetailComponent,
+    LendingsCloseComponent
   ],
   imports: [
     CommonModule,

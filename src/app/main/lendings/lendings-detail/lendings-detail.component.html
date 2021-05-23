@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 <o-form service="lendings" entity="lendingDetails" keys="LENDINGID" editable-detail="no" header-actions="R;U;D">
+=======
+
+
+<o-form service="lendings" entity="lendingDetails" keys="LENDINGID"  header-actions="R;U;D">
+>>>>>>> dev/listLending
   <o-text-input attr="LENDINGID" sql-type="INTEGER" enabled="no"></o-text-input>
   <o-column title-label="CUSTOMER_PERSONAL_LENDING_INFORMATION" fxFlex>
     <o-row>
@@ -25,5 +31,12 @@
     keys="LENDINGID" columns="LENDINGID;COPYID;COPYNOTES;BOOKTITLE" parent-keys="LENDINGID"
     visible-columns="COPYID;BOOKTITLE;COPYNOTES" show-title="true">
   </o-table>
+<<<<<<< HEAD
   <o-button attr="addReservation" (click)="clickAddReservation()" type="STROKED" label="NEW RESERVATION" layout-padding color="primary"></o-button>
 </o-form>
+=======
+  </o-form>
+  <div fxLayout="row" layout-padding fxLayoutAlign="center center">
+    <o-button attr="closeLending" (click)="clickCloseLending()" type="FLAT" label="CLOSE LENDING" layout-padding color="accent"></o-button>
+  </div>
+>>>>>>> dev/listLending
