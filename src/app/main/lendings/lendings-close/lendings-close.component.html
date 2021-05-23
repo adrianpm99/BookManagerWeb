@@ -1,0 +1,26 @@
+<p>PANTALLA DEVOLUCION PRESTAMOS (RELLENE CAMPO DE ANOTACIONES)</p>
+<o-form service="lendings" entity="lending" keys="LENDINGID"  header-actions="R;I;U;D">
+  <o-text-input attr="LENDINGID" sql-type="INTEGER" enabled="no"></o-text-input>
+
+
+  <o-column title-label="LENDING_INFORMATION" fxFlex>
+    <o-row>
+      <o-date-input attr="LENDINGDATE" enabled="no"></o-date-input>
+    </o-row>
+    <o-row>
+      <o-date-input attr="LENDINGDEADLINE" enabled="no" ></o-date-input>
+    </o-row>
+    <o-row>
+      <o-date-input attr="LENDINGRETURNDATE" read-only="no"></o-date-input>
+    </o-row>
+    <o-row>
+      <o-text-input attr="LENDINGNOTES" read-only="no" fxFlex></o-text-input>
+    </o-row>
+  </o-column>
+
+  <o-table fxFlex attr="listCopies" title="LISTADO DE EJEMPLARES" service="lendings" entity="copiesFromLending"
+    keys="LENDINGID" columns="LENDINGID;COPYID;COPYNOTES;BOOKTITLE" parent-keys="LENDINGID"
+    visible-columns="COPYID;BOOKTITLE;COPYNOTES" show-title="true">
+  </o-table>
+</o-form>
+

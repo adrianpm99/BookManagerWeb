@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LendingsHomeComponent } from "./lendings-home/lendings-home.component";
-//import { LendingsDetailComponent } from './lendings-detail/lendings-detail.component';
-//import { LendingsEditComponent } from './lendings-edit/lendings-edit.component';
-//import { LendingsAddComponent } from './lendings-add/lendings-add.component';
+import { LendingsDetailComponent } from './lendings-detail/lendings-detail.component';
+import { LendingsCloseComponent } from './lendings-close/lendings-close.component'
 
-const routes: Routes = [{ path: '', component: LendingsHomeComponent }
-//{ path: 'add', component: LendingsAddComponent },
-//{ path: ':lendingid', component: LendingsDetailComponent },
-//{ path: ':lendingid/edit', component: LendingsEditComponent }
+//var date = new Date();
+//var hoy = date.getTime();
+
+const routes: Routes = [
+{path : '',component: LendingsHomeComponent},
+{path: ':LENDINGID',component: LendingsDetailComponent},
+//{path: ":LENDINGID/"+hoy+"/edit",component: LendingsDetailComponent},
+{path: ':LENDINGID/close',component: LendingsCloseComponent}
+
 ];
 
 @NgModule({
