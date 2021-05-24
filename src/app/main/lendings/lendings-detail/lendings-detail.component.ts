@@ -9,41 +9,23 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class LendingsDetailComponent implements OnInit {
 
   constructor(private router: Router,
-    private actRoute: ActivatedRoute) { }
+    private actRoute: ActivatedRoute) {
+   }
 
   ngOnInit() {
 
-    //poner el boton guardar en activo
-    //focusMethod = function getFocus() {
-     // document.getElementById("myButton").focus();
-   // document.getElementById("LENDINGRETURNDATE").nodeValue = "20-12-2021";
+
   }
 
   clickCloseLending(){
-    let date = new Date().getTime();
-   // let hoy = date.getFullYear()+ "-" + date.getMonth()+ "-" + date.getDay()
-    //document.getElementById("LENDINGRETURNDATE").firstChild.nodeValue = "20-12-2021";
 
-    this.router.navigate(['main/lendings/LENDINGID/close']);
+    let id = +this.actRoute.snapshot.paramMap.get('LENDINGID');
+    this.router.navigate(['main/lendings/'+id+'/close']);
   }
 
 
   clickAddReservation(){
     this.router.navigate(['main/reservations/new']);
   }
-
-
-/*
-  public forceInsertMode(event: any) {
-    if (event != OFormComponent.Mode().INSERT) {
-      this.form.setInsertMode();
-      this.form.setFieldValues(this.data)
-    }
-  }
-
-  public closeDialog(event: any) {
-    this.dialogRef.close();
-  }
-*/
 
 }

@@ -7,3 +7,22 @@
 <div fxLayout="row" layout-padding fxLayoutAlign="center center">
   <o-button attr="newlending" (click)="clickAddLending()" type="FLAT" label="NEW LENDING" layout-padding color="accent"></o-button>
 </div>
+
+<div fxLayout="row" layout-padding fxLayoutAlign="center center">
+  <o-button attr="closelending" (click)="clickCloseLending()" type="FLAT" label="CLOSE LENDING" layout-padding color="accent"></o-button>
+</div>
+
+<div>
+  <o-table fxFlex attr="lendingsTable" service="lendings" entity="expiredLending"  keys="LENDINGID" query-rows="20"
+            title="PRESTAMOS VENCIDOS A FECHA DE HOY" show-title="true" keys="LENDINGID" insert-button="no"
+             refresh-button="no" detail-mode="none" delete-button="no" query-rows="20" quick-filter ="false"
+             columns="LENDINGID;CUSTOMERID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE"
+             visible-columns="LENDINGID;CUSTOMERID;LENDINGDATE;LENDINGDEADLINE">
+             <o-table-column attr="LENDINGID" title="LENDINGID" width="150px"></o-table-column>
+             <o-table-column attr="CUSTOMERID" title="CUSTOMERID" width="150px"></o-table-column>
+          <o-table-column attr="LENDINGDATE" title="LENDINGDATE" type="date" format="LL"></o-table-column>
+          <o-table-column attr="LENDINGDEADLINE" title="LENDINGDEADLINE" type="date" format="LL"></o-table-column>
+ </o-table>
+</div>
+
+

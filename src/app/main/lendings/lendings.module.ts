@@ -11,8 +11,12 @@ import { LendingsCloseComponent } from './lendings-close/lendings-close.componen
 @NgModule({
 
   declarations: [
-    LendingsHomeComponent, LendingsAddComponent, CopylendingsAddComponent, LendingsDetailComponent,
+    LendingsHomeComponent,
+    LendingsAddComponent,
+    CopylendingsAddComponent,
+    LendingsDetailComponent,
     LendingsCloseComponent
+
   ],
   imports: [
     CommonModule,

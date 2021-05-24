@@ -50,5 +50,6 @@
   "LENDINGRETURNDATE": "Fecha Devolucion Prestamo",
   "LENDINGNOTES": "Observaciones Prestamo",
   "USER_INFORMATION":"INFORMACIÓN DEL USUARIO",
-  "CLOSE LENDING": "CERRAR PRESTAMO"
+  "CLOSE LENDING": "Cerrar Prestamo",
+  "LIST PAST DATE LENDING": "Listado Prestamos Vencidos"
 }

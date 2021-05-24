@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LendingsCloseComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit() {
+
   }
 
 }

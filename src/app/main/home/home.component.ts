@@ -25,4 +25,9 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['main/reservations/new']);
   }
 
+  clickCloseLending(){
+    this.router.navigate(['main/lendings']);
+  }
+
+
 }

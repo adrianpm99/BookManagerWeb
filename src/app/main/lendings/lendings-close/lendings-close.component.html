@@ -1,5 +1,6 @@
-<p>PANTALLA DEVOLUCION PRESTAMOS (RELLENE CAMPO DE ANOTACIONES)</p>
-<o-form service="lendings" entity="lending" keys="LENDINGID"  header-actions="R;I;U;D">
+<p>PANTALLA DEVOLUCION PRESTAMOS (INSERTE DATOS EN EL CAMPO DE ANOTACIONES)</p>
+<o-form service="lendings" entity="lending" keys="LENDINGID" parent-keys = "LENDINGID" insert-button="no"
+refresh-button="no" detail-mode="none" delete-button="no">
   <o-text-input attr="LENDINGID" sql-type="INTEGER" enabled="no"></o-text-input>
 
 
@@ -11,7 +12,7 @@
       <o-date-input attr="LENDINGDEADLINE" enabled="no" ></o-date-input>
     </o-row>
     <o-row>
-      <o-date-input attr="LENDINGRETURNDATE" read-only="no"></o-date-input>
+      <o-date-input attr="LENDINGRETURNDATE" enabled="no"></o-date-input>
     </o-row>
     <o-row>
       <o-text-input attr="LENDINGNOTES" read-only="no" fxFlex></o-text-input>
@@ -20,7 +21,8 @@
 
   <o-table fxFlex attr="listCopies" title="LISTADO DE EJEMPLARES" service="lendings" entity="copiesFromLending"
     keys="LENDINGID" columns="LENDINGID;COPYID;COPYNOTES;BOOKTITLE" parent-keys="LENDINGID"
-    visible-columns="COPYID;BOOKTITLE;COPYNOTES" show-title="true">
+    visible-columns="COPYID;BOOKTITLE;COPYNOTES" show-title="true" insert-button="no"
+    refresh-button="no" detail-mode="none" delete-button="no" query-rows="20" quick-filter ="false">
   </o-table>
 </o-form>
 
