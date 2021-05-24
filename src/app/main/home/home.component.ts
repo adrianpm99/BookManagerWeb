@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   clickAddLending(){
-    this.router.navigate(['main/reservations/new']);
+    this.router.navigate(['main/lendings/new']);
   }
 
 }
