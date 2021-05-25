@@ -15,4 +15,11 @@ export class LendingsCloseComponent implements OnInit {
 
   }
 
+  getValue() {
+    let fecha=new Date();
+    fecha.getTime();
+    return fecha;
+  }
+
+
 }
