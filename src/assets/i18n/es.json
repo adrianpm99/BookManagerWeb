@@ -51,5 +51,7 @@
   "LENDINGNOTES": "Observaciones Prestamo",
   "USER_INFORMATION":"INFORMACIÓN DEL USUARIO",
   "CLOSE LENDING": "Cerrar Prestamo",
-  "LIST PAST DATE LENDING": "Listado Prestamos Vencidos"
+  "LIST PAST DATE LENDING": "Listado Prestamos Vencidos",
+  "BOOKSAVAILABLERESERVATION": "Libros disponibles para reserva",
+  "COPIESAVAILABLE": "Ejemplares disponibles"
 }

@@ -2,7 +2,9 @@
   <o-row>
     <o-column title-label="LENDING_INFORMATION" fxFlex>
       <o-row>
-        <o-integer-input class="input-padding" attr="CUSTOMERID" fxFlex="40" required="yes"></o-integer-input>
+        <o-combo attr="CUSTOMERID" class="input-padding" service="customers" entity="customer" keys="CUSTOMERID" columns="CUSTOMERID;CUSTOMERNAME;CUSTOMERSURNAME"
+          visible-columns="CUSTOMERID;CUSTOMERNAME;CUSTOMERSURNAME"  value-column="CUSTOMERID" searchable="yes" fxFlex>
+      </o-combo>
       </o-row>
       <o-row>
         <o-date-input attr="LENDINGDATE" class="input-padding" fxFlex="40" required="yes"></o-date-input>

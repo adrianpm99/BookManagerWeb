@@ -1,12 +1,13 @@
 <o-form service="reservations" entity="reservation" keys="RESERVATIONID" header-actions="R;I;U;D" show-header-navigation="no">
   <o-row>
     <o-column title-label="RESERVATION_INFORMATION" fxFlex>
+      <o-combo attr="BOOKSAVAILABLERESERVATION" class="input-padding" service="reservations" entity="reservationAvailable" keys="COPYID" columns="COPYID;BOOKID;BOOKTITLE"
+          visible-columns="BOOKID;BOOKTITLE"  value-column="COPYID" searchable="yes">
+      </o-combo>
       <o-row>
-        <o-integer-input attr="BOOKID" class="input-padding" fxFlex></o-integer-input>
-
-      </o-row>
-      <o-row>
-        <o-integer-input attr="CUSTOMERID" fxFlex></o-integer-input>
+        <o-combo attr="CUSTOMERID" class="input-padding" service="customers" entity="customer" keys="CUSTOMERID" columns="CUSTOMERID;CUSTOMERNAME;CUSTOMERSURNAME"
+          visible-columns="CUSTOMERID;CUSTOMERNAME;CUSTOMERSURNAME"  value-column="CUSTOMERID" searchable="yes" fxFlex>
+      </o-combo>
       </o-row>
     </o-column>
   </o-row>
