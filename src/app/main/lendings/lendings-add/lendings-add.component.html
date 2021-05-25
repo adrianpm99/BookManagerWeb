@@ -7,8 +7,8 @@
       </o-combo>
       </o-row>
       <o-row>
-        <o-date-input attr="LENDINGDATE" class="input-padding" fxFlex="40" required="yes"></o-date-input>
-        <o-date-input attr="LENDINGDEADLINE" class="input-padding" fxFlex="40" required="yes"></o-date-input>
+        <o-date-input #lendingdate attr="LENDINGDATE" [data]="getLendingDate()" class="input-padding" fxFlex="40" required="yes"></o-date-input>
+        <o-date-input attr="LENDINGDEADLINE" [data]="getDate()" class="input-padding" fxFlex="40" required="yes"></o-date-input>
         <o-date-input attr="LENDINGRETURNDATE" class="input-padding" fxFlex="40"></o-date-input>
       </o-row>
       <o-row>

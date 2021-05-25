@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ODateInputComponent } from 'ontimize-web-ngx';
 
 @Component({
   selector: 'app-lendings-add',
@@ -6,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lendings-add.component.css']
 })
 export class LendingsAddComponent implements OnInit {
-
+  @ViewChild ('lendingDate',{static : true}) lendingDate : ODateInputComponent;
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  getLendingDate(){
+    let date = Date.now();
+    console.log(date);
+    return date;
+  }
+  getDate(){
+    let date = Date.now() + 1296000000;
+
+    console.log(date);
+    return date;
   }
 }
+
