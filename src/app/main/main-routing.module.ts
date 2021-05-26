@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuardService } from 'ontimize-web-ngx';
 
 //import { HomeModule } from './home/home.module';
-import { BooksModule } from './books/books.module';
 import { MainComponent } from './main.component';
+import { BooksModule } from './books/books.module';
 import { CustomersModule } from './customers/customers.module';
 import { ReservationsModule } from './reservations/reservations.module';
 import { LendingsModule } from './lendings/lendings.module';
