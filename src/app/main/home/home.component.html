@@ -12,8 +12,9 @@
   <o-table fxFlex attr="lendingsTable" service="lendings" entity="expiredLending"  keys="LENDINGID" query-rows="20"
             title="PRESTAMOS VENCIDOS A FECHA DE HOY" show-title="true" keys="LENDINGID" insert-button="no"
              refresh-button="no" detail-mode="none" delete-button="no" query-rows="20" quick-filter ="false"
-             columns="LENDINGID;CUSTOMERID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE"
-             visible-columns="LENDINGID;CUSTOMERID;LENDINGDATE;LENDINGDEADLINE">
+             columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE;CUSTOMERNAME;CUSTOMERSURNAME"
+             visible-columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE;CUSTOMERNAME;CUSTOMERSURNAME">
+          <o-table-column attr="LENDINGID" title="LENDINGID" width="50px"></o-table-column>
           <o-table-column attr="LENDINGDATE" title="LENDINGDATE" type="date" format="LL"></o-table-column>
           <o-table-column attr="LENDINGDEADLINE" title="LENDINGDEADLINE" type="date" format="LL"></o-table-column>
  </o-table>

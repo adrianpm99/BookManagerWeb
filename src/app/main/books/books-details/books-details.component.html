@@ -1,4 +1,4 @@
-<o-form editable-detail="no" service="books" entity="book" keys="BOOKID" header-actions="R;I;U;D"
+<o-form editable-detail="no" service="books" entity="book" keys="BOOKID" header-actions="R;I;U;"
   show-header-navigation="no">
   <o-row>
     <o-text-input attr="BOOKID" sql-type="INTEGER"></o-text-input>
@@ -27,7 +27,7 @@
     <div fxFlex>
       <o-table fxFlex attr="copysTable" title="LISTADO DE EJEMPLARES" service="copys" entity="copy" keys="COPYID"
         columns="COPYID;BOOKID;COPYNOTES" visible-columns="COPYID;COPYNOTES" query-rows="20" quick-filter="false"
-        export-button="false" delete-button="false" refresh-button="false" show-title="true" parent-keys="BOOKID" 
+        export-button="false" delete-button="false" refresh-button="false" show-title="true" parent-keys="BOOKID"
         insert-button="true" insert-form-route="copies/new">
       </o-table>
     </div>
@@ -65,7 +65,7 @@
   <div fxFlex>
     <o-table fxFlex attr="copysTable" title="LISTADO DE EJEMPLARES" service="copys" entity="copy" keys="COPYID"
       columns="COPYID;BOOKID;COPYNOTES" visible-columns="COPYID;COPYNOTES" query-rows="20" quick-filter="false"
-      export-button="false" delete-button="false" refresh-button="false" show-title="true" parent-keys="BOOKID" 
+      export-button="false" delete-button="false" refresh-button="false" show-title="true" parent-keys="BOOKID"
       insert-button="true" insert-form-route="copies/new">
     </o-table>
   </div>

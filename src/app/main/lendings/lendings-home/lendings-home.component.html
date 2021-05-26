@@ -1,10 +1,11 @@
 <div fxFlex>
-<o-table fxFlex attr="lendingsTable" service="lendings" entity="lending" keys="LENDINGID"  query-rows="20"
-             columns="LENDINGID;CUSTOMERID;LENDINGDATE;LENDINGDEADLINE"
-             visible-columns="LENDINGID;CUSTOMERID;LENDINGDATE;LENDINGDEADLINE"  >
-             <o-table-column attr="LENDINGID" title="LENDINGID" ></o-table-column>
-             <o-table-column attr="CUSTOMERID" title="CUSTOMERID"></o-table-column>
+<o-table fxFlex attr="lendingsTable" service="lendings" entity="lendingDetails" delete-button="no" keys="LENDINGID"  query-rows="20"
+             columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE;CUSTOMERNAME;CUSTOMERSURNAME"
+             visible-columns="LENDINGID;LENDINGDATE;LENDINGRETURNDATE;CUSTOMERNAME;CUSTOMERSURNAME">
+          <o-table-column attr="LENDINGID" title="LENDINGID" width="50px"></o-table-column>
           <o-table-column attr="LENDINGDATE" title="LENDINGDATE" type="date" format="LL"></o-table-column>
-          <o-table-column attr="LENDINGDEADLINE" title="LENDINGDEADLINE" type="date" format="LL"></o-table-column>
+          <o-table-column attr="LENDINGRETURNDATE" title="LENDINGRETURNDATE" type="date" format="LL"></o-table-column>
+          <o-table-column attr="CUSTOMERNAME" title="CUSTOMERNAME"></o-table-column>
+          <o-table-column attr="CUSTOMERNAME" title="CUSTOMERNAME" width="50px"></o-table-column>
  </o-table>
 </div>

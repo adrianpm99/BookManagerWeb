@@ -6,6 +6,7 @@ import { BooksHomeComponent } from './books-home/books-home.component';
 import { BooksDetailsComponent } from './books-details/books-details.component';
 import { BooksAddComponent } from './books-add/books-add.component';
 import { CopiesAddComponent} from '../copies/copies-add/copies-add.component';
+import { BooksEditComponent } from './books-edit/books-edit.component';
 
 @NgModule({
 
@@ -14,6 +15,6 @@ import { CopiesAddComponent} from '../copies/copies-add/copies-add.component';
     OntimizeWebModule,
     BooksRoutingModule
   ],
-  declarations: [BooksHomeComponent, BooksDetailsComponent, BooksAddComponent, CopiesAddComponent]
+  declarations: [BooksHomeComponent, BooksDetailsComponent, BooksAddComponent, CopiesAddComponent, BooksEditComponent]
 })
 export class BooksModule { }
