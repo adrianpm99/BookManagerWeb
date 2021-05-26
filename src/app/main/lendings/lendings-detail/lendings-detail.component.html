@@ -1,4 +1,4 @@
-<o-form service="lendings" entity="lendingDetails" keys="LENDINGID" editable-detail="no" header-actions="R;U;D">
+<o-form service="lendings" entity="lendingDetails" keys="LENDINGID" editable-detail="no" header-actions="R;U;">
   <o-text-input attr="LENDINGID" sql-type="INTEGER" enabled="no"></o-text-input>
   <o-column title-label="CUSTOMER_PERSONAL_LENDING_INFORMATION" fxFlex>
     <o-row>
@@ -15,7 +15,7 @@
       <o-date-input attr="LENDINGDEADLINE" ></o-date-input>
     </o-row>
     <o-row>
-      <o-date-input attr="LENDINGRETURNDATE" read-only="no"></o-date-input>
+      <o-date-input attr="LENDINGRETURNDATE"></o-date-input>
     </o-row>
     <o-row>
       <o-text-input attr="LENDINGNOTES" read-only="no" fxFlex></o-text-input>
