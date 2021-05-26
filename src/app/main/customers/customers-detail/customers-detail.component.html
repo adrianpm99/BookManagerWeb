@@ -1,15 +1,18 @@
 <o-form editable-detail="no" service="customers" entity="customer" 
-keys="CUSTOMERID" header-actions="R;I;U;D"
-show-header-navigation="no">
+keys="CUSTOMERID" header-actions="R;I;U;D" show-header-navigation="no">
 <o-column title="{{ 'USER_INFORMATION' | oTranslate}}" fxFlex> 
     <o-row>
-        <o-integer-input attr="CUSTOMERID" class="input-padding"></o-integer-input>
+        <o-integer-input attr="CUSTOMERID" class="input-padding" fxFlex></o-integer-input>
+        <o-text-input attr="CUSTOMERNAME" class="input-padding" fxFlex></o-text-input>        
+        <o-text-input attr="CUSTOMERSURNAME" class="input-padding" fxFlex></o-text-input>
+        <o-text-input attr="CUSTOMERDNI" class="input-padding" fxFlex></o-text-input>
     </o-row>
     <o-row>
-        <o-text-input attr="CUSTOMERNAME" class="input-padding"></o-text-input>        
+        <o-text-input attr="CUSTOMERADDRESS" class="input-padding" fxFlex></o-text-input>
     </o-row>
     <o-row>
-        <o-text-input attr="CUSTOMERSURNAME" class="input-padding"></o-text-input>
+        <o-text-input attr="CUSTOMERTLF" class="input-padding" fxFlex></o-text-input>
+        <o-text-input attr="CUSTOMEREMAIL" class="input-padding" fxFlex></o-text-input>
     </o-row>
 </o-column>
 </o-form>
