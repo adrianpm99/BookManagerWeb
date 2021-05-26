@@ -3,13 +3,12 @@
 refresh-button="no" detail-mode="none" delete-button="no">
   <o-text-input attr="LENDINGID" sql-type="INTEGER" enabled="no"></o-text-input>
 
-
   <o-column title-label="LENDING_INFORMATION" fxFlex>
     <o-row>
-      <o-date-input attr="LENDINGDATE" enabled="no"></o-date-input>
+      <o-date-input attr="LENDINGDATE" read-only ="yes"></o-date-input>
     </o-row>
     <o-row>
-      <o-date-input attr="LENDINGDEADLINE" enabled="no" ></o-date-input>
+      <o-date-input attr="LENDINGDEADLINE" read-only="yes" ></o-date-input>
     </o-row>
     <o-row>
       <o-date-input attr="LENDINGRETURNDATE"  [data]="getValue()" ></o-date-input>
