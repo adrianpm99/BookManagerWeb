@@ -23,8 +23,9 @@
   "BOOKDESCRIPTION": "Description",
   "BOOKAUTHOR": "Author",
   "BOOKPAGENUMBER": "Page Number",
+  "ERROR_PAGE_NUMBER_FORMAT": "0 and lower not allowed",
   "BOOKISBN": "ISBN",
-  "ERROR_ISBN_FORMAT": "Only numbers allowed",
+  "ERROR_ISBN_FORMAT": "Only 13 numbers allowed",
   "BOOKEDITORIAL": "Editorial",
   "BOOKEDITION": "Edition",
   "BOOKPUBLICATIONYEAR": "Publication Year",
@@ -67,7 +68,9 @@
   "CUSTOMERDNI": "Customer DNI",
   "CUSTOMERADDRESS": "Customer Address",
   "CUSTOMERTLF": "Customer Tlf",
+  "ERROR_CUSTOMER_PHONE_FORMAT": "Only 9 numbers allowed",
   "CUSTOMEREMAIL": "Customer email",
   "CUSTOMER_INFORMATION":"USER INFORMATION",
+  "CUSTOMER_ADD": "Add Customer",
   "EDIT_CUSTOMER_DETAILS": "EDIT CUSTOMER DETAILS"
 }

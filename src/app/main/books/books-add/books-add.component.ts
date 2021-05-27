@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ValidationErrors, FormControl, ControlContainer, NgControlStatus, RequiredValidator } from '@angular/forms';
+import { FormControl, ValidationErrors } from '@angular/forms';
 
 @Component({
   selector: 'app-books-add',
@@ -12,20 +12,6 @@ export class BooksAddComponent implements OnInit {
 
   ngOnInit() {
   }
-  /*//Pattern (All)
-  validDefault (control: FormControl): ValidationErrors {
-
-    let result;
-    console.log(control);
-
-    if(control.value && control){
-      result = {'defaultError': true};
-    }else{
-      result = {};
-    }
-    return result;
-
-  }//isValid()*/
 
   //Pattern ISBN
   validISBN(control: FormControl): ValidationErrors {
@@ -33,7 +19,7 @@ export class BooksAddComponent implements OnInit {
     let regexp = new RegExp("^[\\d]{13}$");
     let result = {};
 
-    if (!regexp.test(control.value.toString())) {
+    if (!regexp.test(control.value)) {
       result = {'ISBNFormat': true};
     }
     return result;
@@ -55,6 +41,18 @@ export class BooksAddComponent implements OnInit {
       }
     }
     return result;
-  /*pattern="^(?!0)\\d{0,3}$"*/
+
   }//validBookPublicationYear()
+
+  //Pattern PageNumber
+  validBookPageNumber(control: FormControl): ValidationErrors {
+
+    let result = {};
+
+    if (control.value <= 0 && control.value) {
+      result = {'bookPageNumberFormat': true};
+    }
+    return result;
+
+  }//validBookPageNumber()
 }
