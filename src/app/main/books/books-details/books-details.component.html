@@ -26,7 +26,7 @@
     <o-form-layout-dialog-options width="700px" height="500px" disable-close="false"></o-form-layout-dialog-options>
     <div fxFlex>
       <o-table fxFlex attr="copysTable" title="LISTADO DE EJEMPLARES" service="copys" entity="copy" keys="COPYID"
-        columns="COPYID;BOOKID;COPYNOTES" visible-columns="COPYID;COPYNOTES" query-rows="20" quick-filter="false"
+        columns="COPYCODE;BOOKID;COPYNOTES" visible-columns="COPYCODE;COPYNOTES" query-rows="20" quick-filter="false"
         export-button="false"  delete-button="false" refresh-button="false" show-title="true" parent-keys="BOOKID"
         insert-button="true"  insert-form-route="copies/new" edit-form-route="copies/edit">
       </o-table>
