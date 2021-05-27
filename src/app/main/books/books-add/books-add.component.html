@@ -1,8 +1,7 @@
-<o-form service="books" entity="book" keys="BOOKID" header-actions="I" label-header="BOOK_ADD" >
+<o-form service="books" entity="book" keys="BOOKID" header-actions="I" label-header="BOOK_ADD">
     <o-row>
-      <o-text-input attr="BOOKISBN" class="input-padding" required="yes" min-length="13" max-length="13">
-        <o-validator error-name="ISBNFormat" error-text="ERROR_ISBN_FORMAT" [validator-function]="validISBN">
-        </o-validator>
+      <o-text-input attr="BOOKISBN" required="yes" min-length="13" max-length="13">
+        <o-validator error-name="ISBNFormat" error-text="ERROR_ISBN_FORMAT" [validator-function]="validISBN"></o-validator>
       </o-text-input>
     </o-row>
     <o-row>
@@ -17,8 +16,12 @@
     </o-row>
     <o-row>
       <o-text-input attr="BOOKEDITORIAL" max-length="50"></o-text-input>
-      <o-integer-input attr="BOOKEDITION" max-length="3"></o-integer-input>
-      <o-integer-input attr="BOOKPAGENUMBER" max-length="4"></o-integer-input>
+      <o-integer-input attr="BOOKEDITION" max-length="3">
+        <o-validator error-name="bookPageNumberFormat" error-text="ERROR_PAGE_NUMBER_FORMAT" [validator-function]="validBookPageNumber"></o-validator>
+      </o-integer-input>
+      <o-integer-input attr="BOOKPAGENUMBER" max-length="4">
+        <o-validator error-name="bookPageNumberFormat" error-text="ERROR_PAGE_NUMBER_FORMAT" [validator-function]="validBookPageNumber"></o-validator>
+      </o-integer-input>
     </o-row>
     <o-row>
       <o-textarea-input attr="BOOKDESCRIPTION" fxFlex="40" max-length="200"></o-textarea-input>
