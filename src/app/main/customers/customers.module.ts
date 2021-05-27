@@ -5,6 +5,7 @@ import { CustomersRoutingModule } from './customers-routing.module';
 import { CustomersHomeComponent } from './customers-home/customers-home.component';
 import { CustomersDetailComponent } from './customers-detail/customers-detail.component';
 import { CustomersAddComponent } from './customers-add/customers-add.component';
+import { CustomersEditComponent } from './customers-edit/customers-edit.component';
 
 
 @NgModule({
@@ -13,6 +14,6 @@ import { CustomersAddComponent } from './customers-add/customers-add.component';
     OntimizeWebModule,
     CustomersRoutingModule
   ],
-  declarations: [CustomersHomeComponent, CustomersDetailComponent, CustomersAddComponent]
+  declarations: [CustomersHomeComponent, CustomersDetailComponent, CustomersAddComponent, CustomersEditComponent]
 })
 export class CustomersModule { }

@@ -1,8 +1,8 @@
-<o-form editable-detail="no" service="customers" entity="customer"
-keys="CUSTOMERID" header-actions="R;I;U;D" show-header-navigation="no">
-<o-column title="{{ 'CUSTOMER_INFORMATION' | oTranslate}}" fxFlex>
+<o-form editable-detail="yes" service="customers" entity="customer"
+keys="CUSTOMERID" header-actions="R;U" show-header-navigation="no">
+<o-column title="{{ 'EDIT_CUSTOMER_DETAILS' | oTranslate}}" fxFlex>
     <o-row>
-        <o-integer-input attr="CUSTOMERID" class="input-padding" fxFlex></o-integer-input>
+        <o-integer-input attr="CUSTOMERID" enabled="no" class="input-padding" fxFlex></o-integer-input>
     </o-row>
     <o-row>
         <o-text-input attr="CUSTOMERNAME" class="input-padding" fxFlex></o-text-input>
