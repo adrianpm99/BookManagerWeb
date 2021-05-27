@@ -38,6 +38,7 @@
   "COPYID": "Id del ejemplar",
   "COPYNOTES": "Notas del ejemplar",
   "COPIESAVAILABLE": "Ejemplares disponibles",
+  "COPYCODE": "Código Ejemplar",
 
   "RESERVATIONS":"Reservas",
   "RESERVATIONID":"Id",
