@@ -5,6 +5,7 @@ import { BooksDetailsComponent } from './books-details/books-details.component';
 import { BooksAddComponent } from './books-add/books-add.component';
 import { CopiesAddComponent} from '../copies/copies-add/copies-add.component';
 import { BooksEditComponent } from './books-edit/books-edit.component';
+import { CopiesEditComponent } from '../copies/copies-edit/copies-edit.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,9 @@ const routes: Routes = [
 { path: 'new', component: BooksAddComponent }, // ... /books/new
 { path: ':BOOKID', component: BooksDetailsComponent }, // ... /books/3
 { path: ':BOOKID/copies/new', component: CopiesAddComponent }, // ... /books/3/copies/new
-{ path: ':BOOKID/edit', component:BooksEditComponent}  //.../books/edit
+{ path: ':BOOKID/edit', component:BooksEditComponent},  //.../books/edit
+{ path: ':BOOKID/:COPYID', component: CopiesEditComponent}
+
 ];
 
 @NgModule({
