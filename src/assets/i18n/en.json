@@ -14,9 +14,11 @@
   "ERROR_USER_REQUIRED": "Incorrect username.",
   "ERROR_PASS_REQUIRED": "Incorrect password.",
   "ERROR_USER_PASS_INCORRECT": "Invalid username or password.",
+  "WELCOME":"¡Welcome to BookManager!",
 
   "BOOKS": "Books",
-  "BOOKID": "Id",
+  "BOOKID": "BOOK ID",
+  "B_BOOKID":"BOOK ID",
   "BOOKTITLE": "Title",
   "BOOKDESCRIPTION": "Description",
   "BOOKAUTHOR": "Author",
