@@ -17,15 +17,15 @@ export class LendingsDetailComponent implements OnInit {
 
   }
 
+  //Navigation to the lending close tab with a certain lending id
   clickCloseLending(){
-
     let id = +this.actRoute.snapshot.paramMap.get('LENDINGID');
     this.router.navigate(['main/lendings/'+id+'/close']);
-  }
+  }//clickCloseLending()
 
-
+  //Navigation to the lending add tab
   clickAddReservation(){
     this.router.navigate(['main/reservations/new']);
-  }
+  }//clickAddReservation()
 
 }

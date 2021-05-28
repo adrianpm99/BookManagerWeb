@@ -13,7 +13,7 @@ export class CustomersAddComponent implements OnInit {
   ngOnInit() {
   }
 
-  //Pattern Phone
+  //Pattern Phone, checks if the provided number is exactly 9 characters
   validCustomerPhone(control: FormControl): ValidationErrors {
 
     let regexp = new RegExp("^[\\d]{9}$");

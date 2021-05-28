@@ -14,16 +14,19 @@ export class LendingsAddComponent implements OnInit {
 
   }
 
+  //Method that gets the current date and returns it
   getLendingDate(){
     let date = Date.now();
     console.log(date);
     return date;
-  }
+  }//getLendingDate()
+
+  //Method that gets the return date of the lending (current date + 15 days) and returns it
   getDate(){
     let date = Date.now() + 1296000000;
 
     console.log(date);
     return date;
-  }
+  }//getDate()
 }
 

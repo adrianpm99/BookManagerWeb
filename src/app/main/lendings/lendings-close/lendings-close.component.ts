@@ -15,11 +15,12 @@ export class LendingsCloseComponent implements OnInit {
 
   }
 
+  //Method that gets the date 15 days from current time
   getValue() {
     let fecha=new Date();
     fecha.getTime();
     return fecha;
-  }
+  }//getDate()
 
 
 }
