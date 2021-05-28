@@ -13,7 +13,7 @@ export class BooksAddComponent implements OnInit {
   ngOnInit() {
   }
 
-  //Pattern ISBN
+  //Pattern ISBN, checks if the provided number has exactly 13 numeric characters
   validISBN(control: FormControl): ValidationErrors {
 
     let regexp = new RegExp("^[\\d]{13}$");
@@ -26,7 +26,7 @@ export class BooksAddComponent implements OnInit {
 
   }//validISBN()
 
-  //Pattern BookPublicationYear
+  //Pattern BookPublicationYear, checks if the provided number is exactly 4 characters AND is smaller than the current year.
   validBookPublicationYear(control: FormControl): ValidationErrors {
 
     var fecha = new Date();
@@ -44,7 +44,7 @@ export class BooksAddComponent implements OnInit {
 
   }//validBookPublicationYear()
 
-  //Pattern PageNumber
+  //Pattern PageNumber, checks if the number is a positive number.
   validBookPageNumber(control: FormControl): ValidationErrors {
 
     let result = {};

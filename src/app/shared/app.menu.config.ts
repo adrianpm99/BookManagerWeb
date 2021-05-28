@@ -1,6 +1,9 @@
 import { MenuRootItem } from 'ontimize-web-ngx';
 
 export const MENU_CONFIG: MenuRootItem[] = [
+
+  //All the routes called by the left-side menu of the website.
+  
   { id: 'home', name: 'HOME', icon: 'home', route: '/main/home' },
   { id: 'books', name: 'BOOKS', icon: 'menu_book', route: '/main/books' },
   { id: 'customers', name: 'CUSTOMERS', icon: 'people', route: '/main/customers' },
