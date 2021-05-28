@@ -1,4 +1,8 @@
-<o-form service="lendings" entity="lendingDetails" keys="LENDINGID" editable-detail="no" header-actions="R;U">
+<o-form service="lendings" entity="lendingDetails" keys="LENDINGID" editable-detail="no" header-actions="R">
+  <div fxLayout="row" layout-padding fxLayoutAlign="center center">
+    <o-button attr="newreservation" (click)="clickAddReservation()" type="FLAT" label="NEW RESERVATION" layout-padding color="accent"></o-button>
+    <o-button attr="closelending" (click)="clickCloseLending()" type="FLAT" label="CLOSE LENDING" layout-padding color="accent"></o-button>
+  </div>
   <o-text-input attr="LENDINGID" sql-type="INTEGER" enabled="no"></o-text-input>
   <o-column title-label="CUSTOMER_PERSONAL_LENDING_INFORMATION" fxFlex>
     <o-row>
@@ -22,10 +26,8 @@
     </o-row>
   </o-column>
   <o-table fxFlex attr="listCopies" title="LISTADO DE EJEMPLARES" service="lendings" entity="copiesFromLending"
-    keys="LENDINGID" columns="LENDINGID;COPYID;COPYNOTES;BOOKTITLE" parent-keys="LENDINGID"
-    visible-columns="COPYID;BOOKTITLE;COPYNOTES" show-title="true">
+    keys="LENDINGID" columns="LENDINGID;COPYID;COPYCODE;COPYNOTES;BOOKTITLE" parent-keys="LENDINGID"
+    visible-columns="COPYCODE;BOOKTITLE;COPYNOTES"  delete-button="no" show-title="true">
   </o-table>
-  <o-button fxFlex8 attr="addReservation" (click)="clickAddReservation()" type="STROKED" label="NEW RESERVATION" layout-padding color="primary"></o-button>
-  <o-button fxFlex8 attr="closeLending" (click)="clickCloseLending()" type="FLAT" label="CLOSE LENDING" layout-padding color="accent"></o-button>
-</o-form>
+  </o-form>
 
