@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ODateInputComponent } from 'ontimize-web-ngx';
 
 @Component({
   selector: 'app-lendings-close',
@@ -7,20 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LendingsCloseComponent implements OnInit {
 
-  constructor() {
+  //Inputs import
+  @ViewChild('lendingReturnDate', { read: ODateInputComponent, static: false }) lendingReturnDate: ODateInputComponent;
 
-   }
+  constructor() { }
 
   ngOnInit() {
-
   }
 
-  //Method that gets the date 15 days from current time
-  getValue() {
-    let fecha=new Date();
-    fecha.getTime();
-    return fecha;
-  }//getDate()
+  ngAfterViewInit() {
+
+    //Set inputs value
+    let date = new Date().getTime();
+    setTimeout(() => {
+      this.lendingReturnDate.setData(date);
+    }, 100);
+
+  }
 
 
 }

@@ -7,8 +7,8 @@
       </o-combo>
       </o-row>
       <o-row>
-        <o-date-input #lendingdate attr="LENDINGDATE" [data]="getLendingDate()" read-only="yes" fxFlex="40" required="yes"></o-date-input>
-        <o-date-input attr="LENDINGDEADLINE" [data]="getDate()" fxFlex="40" read-only="yes" required="yes"></o-date-input>
+        <o-date-input #lendingDate attr="LENDINGDATE" read-only="yes" fxFlex="40" required="yes"></o-date-input>
+        <o-date-input #lendingDeadLine attr="LENDINGDEADLINE" fxFlex="40" read-only="yes" required="yes"></o-date-input>
       </o-row>
       <o-row>
         <o-textarea-input attr="LENDINGNOTES" fxFlex max-length="200"></o-textarea-input>
@@ -16,4 +16,3 @@
     </o-column>
   </o-row>
 </o-form>
-

@@ -7,26 +7,26 @@ import { ODateInputComponent } from 'ontimize-web-ngx';
   styleUrls: ['./lendings-add.component.css']
 })
 export class LendingsAddComponent implements OnInit {
-  @ViewChild ('lendingDate',{static : true}) lendingDate : ODateInputComponent;
+
+  //Inputs import
+  @ViewChild('lendingDate', { read: ODateInputComponent, static: false }) lendingDate: ODateInputComponent;
+  @ViewChild('lendingDeadLine', { read: ODateInputComponent, static: false }) lendingDeadLine: ODateInputComponent;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+
+    //Set inputs value
+    let date = new Date().getTime();
+    setTimeout(() => {
+      this.lendingDate.setValue(date);
+      this.lendingDeadLine.setValue(date+1296000000);
+    }, 10);
 
   }
 
-  //Method that gets the current date and returns it
-  getLendingDate(){
-    let date = Date.now();
-    console.log(date);
-    return date;
-  }//getLendingDate()
-
-  //Method that gets the return date of the lending (current date + 15 days) and returns it
-  getDate(){
-    let date = Date.now() + 1296000000;
-
-    console.log(date);
-    return date;
-  }//getDate()
 }
 
