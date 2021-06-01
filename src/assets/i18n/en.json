@@ -44,6 +44,7 @@
   "RESERVATIONS":"Reservations",
   "RESERVATIONID":"Id",
   "NEW RESERVATION":"New Reservation",
+  "RESERVATIONS_EXPIRED_TODAY": "Reservations Expired Today",
 
   "LENDINGS": "Lendings",
   "LENDINGID": "Id",

@@ -44,6 +44,7 @@
   "RESERVATIONS":"Reservas",
   "RESERVATIONID":"Id",
   "NEW RESERVATION":"Nueva Reserva",
+  "RESERVATIONS_EXPIRED_TODAY": "Listado Reservas Caducadas Hoy",
 
   "LENDINGS": "Prestamos",
   "LENDINGID": "Id",
