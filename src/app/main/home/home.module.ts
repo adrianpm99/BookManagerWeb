@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { OntimizeWebModule } from 'ontimize-web-ngx';
-
 import { SharedModule } from '../../shared/shared.module';
-import { LendingsModule } from '../lendings/lendings.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-
+import { LendingsModule } from '../lendings/lendings.module';
+import { ReservationsModule } from '../reservations/reservations.module';
 
 
 
@@ -14,7 +13,9 @@ import { HomeComponent } from './home.component';
     SharedModule,
     OntimizeWebModule,
     HomeRoutingModule,
-    LendingsModule
+    LendingsModule,
+    ReservationsModule
+
   ],
   declarations: [
     HomeComponent

@@ -21,13 +21,14 @@
 </div>
 <div>
   <o-table fxFlex attr="reservationsTable" service="reservations" entity="expiredReservation"  keys="RESERVATIONID" query-rows="20"
-            title="{{ 'RESERVATIONS_EXPIRED_TODAY' | oTranslate}}" show-title="true" insert-button="no"
+            title="{{ 'RESERVATIONS_EXPIRED_TODAY' | oTranslate}}" show-title="true" insert-button="no" detail-form-route="/main/reservations"
              refresh-button="no" delete-button="no" query-rows="20" quick-filter ="false"
-             columns="RESERVATIONID;BOOKTITLE;CUSTOMERNAME;CUSTOMERSURNAME;RESERVATIONDEADLINE"
+             columns="RESERVATIONID;BOOKTITLE;CUSTOMERID;CUSTOMERNAME;CUSTOMERSURNAME;RESERVATIONDEADLINE"
              visible-columns="RESERVATIONID;BOOKTITLE;CUSTOMERNAME;CUSTOMERSURNAME;RESERVATIONDEADLINE">
           <o-table-column attr="RESERVATIONID" title="RESERVATIONID" width="50px"></o-table-column>
-          <o-table-column attr="RESERVATIONDEADLINE" title="RESERVATION" type="date" format="LL"></o-table-column>
+          <o-table-column attr="RESERVATIONDEADLINE" title="RESERVATIONDEADLINE" type="date" format="LL"></o-table-column>
  </o-table>
+
 </div>
 
 
