@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { BuiltinTypeName } from '@angular/compiler';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { OButtonComponent, ODateInputComponent, OTableButtonComponent } from 'ontimize-web-ngx';
+import { Button } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-lendings-detail',
@@ -8,13 +11,22 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class LendingsDetailComponent implements OnInit {
 
+  @ViewChild('lendingReturnDate', { read: ODateInputComponent, static: false }) lendingReturnDate: ODateInputComponent;
+  @ViewChild('closeLending', {read: OButtonComponent, static: false}) closeLendingBtn: OButtonComponent;
+  isButtonVisible = true;
+
   constructor(private router: Router,
     private actRoute: ActivatedRoute) {
    }
 
-  ngOnInit() {
+  ngOnInit() {}
 
-
+  ngAfterViewInit() {
+    setTimeout(() => {
+      if(this.lendingReturnDate.isEmpty() == false){
+        this.isButtonVisible = false;
+      }
+    }, 80);
   }
 
   //Navigation to the lending close tab with a certain lending id
