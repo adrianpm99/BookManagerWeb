@@ -1,10 +1,13 @@
-<o-form service="copys" entity="copy" keys="COPYID" header-actions="R;U;"
+<o-form service="copys" entity="copiesWithShelving" keys="COPYID" header-actions="R;U;"
 show-header-navigation="no">
   <o-row>
     <o-integer-input read-only="yes" attr="COPYID" sql-type="INTEGER"></o-integer-input>
   </o-row>
   <o-row>
     <o-integer-input read-only="yes" attr="COPYCODE" sql-type="INTEGER"></o-integer-input>
+  </o-row>
+  <o-row>
+    <o-text-input read-only="yes" attr="SHELVINGPUBLICNAME"></o-text-input>
   </o-row>
   <o-row>
     <o-text-input attr="COPYNOTES"></o-text-input>
