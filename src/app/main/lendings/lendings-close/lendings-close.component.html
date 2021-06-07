@@ -3,7 +3,7 @@
 </div>
 <o-form  title="DEVOLUCION PRESTAMOS (INSERTE DATOS EN EL CAMPO DE ANOTACIONES)" show-title="true"
 service="lendings" entity="lending" keys="LENDINGID" parent-keys = "LENDINGID" insert-button="no"
-refresh-button="no" detail-mode="none" delete-button="no">
+refresh-button="no" detail-mode="none" delete-button="no"(onUpdate) = "closeLending()"  >
   <o-text-input attr="LENDINGID" sql-type="INTEGER" enabled="no"></o-text-input>
 
   <o-column title-label="LENDING_INFORMATION" fxFlex>
@@ -26,5 +26,23 @@ refresh-button="no" detail-mode="none" delete-button="no">
     visible-columns="COPYCODE;BOOKTITLE;COPYNOTES" show-title="true" insert-button="no"
     refresh-button="no" detail-mode="none" delete-button="no" query-rows="20" quick-filter ="false">
   </o-table>
+  <br>
+  <o-form-layout-manager title="LISTADO DE RESERVAS DE ESTOS EJEMPLARES" mode="dialog">
+
+    <div fxFlex>
+      <o-table fxFlex attr="reservationsCurrent" title="LISTADO DE RESERVAS" service="reservations" entity="reservationCurrent" keys="RESERVATIONID"
+        columns="RESERVATIONID;COPYCODE;BOOKTITLE;CUSTOMERNAME;CUSTOMERSURNAME"
+        visible-columns="RESERVATIONID;COPYCODE;BOOKTITLE;CUSTOMERNAME;CUSTOMERSURNAME"
+        query-rows="20" quick-filter="false" export-button="false" delete-button="false" refresh-button="false"
+        show-title="true" parent-keys="LENDINGID" insert-button="false" >
+        <o-table-column attr="RESERVATIONID" title="RESERVATIONID" width="50px"></o-table-column>
+
+      </o-table>
+    </div>
+  </o-form-layout-manager>
+
+
+
+
 </o-form>
 

@@ -26,5 +26,13 @@ export class LendingsCloseComponent implements OnInit {
 
   }
 
+  closeLending(){
+
+
+     console.log("guardar pulsado")
+
+
+   }
+
 
 }
