@@ -1,7 +1,4 @@
-<div fxLayout="row" layout-padding fxLayoutAlign="center center">
-  <H4>DEVOLUCION PRESTAMOS (INSERTE DATOS EN EL CAMPO DE ANOTACIONES)</H4>
-</div>
-<o-form  title="DEVOLUCION PRESTAMOS (INSERTE DATOS EN EL CAMPO DE ANOTACIONES)" show-title="true"
+<o-form  label-header="LENDING RETURN (INSERT DATA IN THE ANNOTATIONS FIELD)" show-title="true"
 service="lendings" entity="lending" keys="LENDINGID" parent-keys = "LENDINGID" insert-button="no"
 refresh-button="no" detail-mode="none" delete-button="no"(onUpdate) = "closeLending()"  >
   <o-text-input attr="LENDINGID" sql-type="INTEGER" enabled="no"></o-text-input>
@@ -21,16 +18,17 @@ refresh-button="no" detail-mode="none" delete-button="no"(onUpdate) = "closeLend
     </o-row>
   </o-column>
 
-  <o-table fxFlex attr="listCopies" title="LISTADO DE EJEMPLARES" service="lendings" entity="copiesFromLending"
+  <o-table fxFlex attr="listCopies" title="COPIES LIST" service="lendings" entity="copiesFromLending"
     keys="LENDINGID" columns="LENDINGID;COPYID;COPYCODE;COPYNOTES;BOOKTITLE" parent-keys="LENDINGID"
     visible-columns="COPYCODE;BOOKTITLE;COPYNOTES" show-title="true" insert-button="no"
     refresh-button="no" detail-mode="none" delete-button="no" query-rows="20" quick-filter ="false">
   </o-table>
   <br>
-  <o-form-layout-manager title="LISTADO DE RESERVAS DE ESTOS EJEMPLARES" mode="dialog">
+  <o-form-layout-manager title="LIST OF FIRST RESERVATIONS OF THE LENDING COPIES" mode="dialog">
 
     <div fxFlex>
-      <o-table fxFlex attr="reservationsCurrent" title="LISTADO DE RESERVAS" service="reservations" entity="reservationCurrent" keys="RESERVATIONID"
+      <o-table fxFlex attr="reservationsCurrent" title="LIST OF FIRST RESERVATIONS OF THE LENDING COPIES"
+      service="reservations" entity="reservationCurrent" keys="RESERVATIONID"
         columns="RESERVATIONID;COPYCODE;BOOKTITLE;CUSTOMERNAME;CUSTOMERSURNAME"
         visible-columns="RESERVATIONID;COPYCODE;BOOKTITLE;CUSTOMERNAME;CUSTOMERSURNAME"
         query-rows="20" quick-filter="false" export-button="false" delete-button="false" refresh-button="false"

@@ -35,7 +35,7 @@
   "BOOK_DETAILS": "Book Details",
   "BOOKSAVAILABLERESERVATION": "Books available for reservation",
 
-  "LISTADO DE EJEMPLARES": "COPIES LIST",
+  "COPIES LIST": "COPIES LIST",
   "COPYID": "Copy Id",
   "COPYNOTES": "Copy notes",
   "COPIESAVAILABLE": "Available copies",
@@ -46,6 +46,7 @@
   "RESERVATIONID":"Id",
   "NEW RESERVATION":"New Reservation",
   "RESERVATIONS_EXPIRED_TODAY": "Reservations Expired Today",
+  "LIST OF FIRST RESERVATIONS OF THE LENDING COPIES":"LIST OF FIRST RESERVATIONS OF THE LENDING COPIES",
 
   "LENDINGS": "Lendings",
   "LENDINGID": "Id",
@@ -58,6 +59,7 @@
   "CLOSE LENDING": "CLOSE LENDING",
   "LIST PAST DATE LENDING": "LIST PAST DATE LENDING",
   "LENDINGS_EXPIRED_TODAY": "Lendings Expired Today",
+  "LENDING RETURN (INSERT DATA IN THE ANNOTATIONS FIELD)":"Lending return (Insert data in the annotations field)",
 
   "CUSTOMERS": "Customers",
   "CUSTOMERID": "Customer Id",
