@@ -24,8 +24,7 @@ refresh-button="no" detail-mode="none" delete-button="no"(onUpdate) = "closeLend
     refresh-button="no" detail-mode="none" delete-button="no" query-rows="20" quick-filter ="false">
   </o-table>
   <br>
-  <o-form-layout-manager title="LIST OF FIRST RESERVATIONS OF THE LENDING COPIES" mode="dialog">
-
+  <o-form-layout-manager mode="dialog">
     <div fxFlex>
       <o-table fxFlex attr="reservationsCurrent" title="LIST OF FIRST RESERVATIONS OF THE LENDING COPIES"
       service="reservations" entity="reservationCurrent" keys="RESERVATIONID"
@@ -34,7 +33,6 @@ refresh-button="no" detail-mode="none" delete-button="no"(onUpdate) = "closeLend
         query-rows="20" quick-filter="false" export-button="false" delete-button="false" refresh-button="false"
         show-title="true" parent-keys="LENDINGID" insert-button="false" >
         <o-table-column attr="RESERVATIONID" title="RESERVATIONID" width="50px"></o-table-column>
-
       </o-table>
     </div>
   </o-form-layout-manager>
