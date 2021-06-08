@@ -1,5 +1,8 @@
 export const SERVICE_CONFIG: Object = {
   //All paths for the service configuration
+  'customers-home': {
+    'path': '/customers-home'
+  },
   'customers': {
     'path': '/customers'
   },
