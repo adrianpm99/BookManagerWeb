@@ -1,8 +1,7 @@
-import { BuiltinTypeName } from '@angular/compiler';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { OButtonComponent, ODateInputComponent, OTableButtonComponent } from 'ontimize-web-ngx';
-import { Button } from 'selenium-webdriver';
+import { OButtonComponent, ODateInputComponent } from 'ontimize-web-ngx';
+
 
 @Component({
   selector: 'app-lendings-detail',
