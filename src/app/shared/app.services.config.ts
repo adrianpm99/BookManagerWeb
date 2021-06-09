@@ -20,5 +20,9 @@ export const SERVICE_CONFIG: Object = {
   },
   'copylendings': {
     'path': '/copylendings'
+  },
+  'permissions': {
+    'path': '/permissions/get'
+
   }
 };
