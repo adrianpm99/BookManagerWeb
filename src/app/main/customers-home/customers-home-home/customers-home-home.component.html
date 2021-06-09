@@ -8,8 +8,7 @@
     <o-table fxFlex attr="reservationsTable" service="reservations" entity="customerPendingReservations"
         keys="CUSTOMERID" query-rows="20" title="{{ 'YOUR RESERVATIONS' | oTranslate }}" show-title="true"
         insert-button="no" refresh-button="no" delete-button="no" quick-filter="false"
-        columns="BOOKTITLE;RESERVATIONDATE;RESERVATIONDEADLINE;" visible-columns="BOOKTITLE;RESERVATIONDATE;RESERVATIONDEADLINE">
-        <o-table-column attr="RESERVATIONDATE" title="RESERVATIONDATE" type="date" format="LL"></o-table-column>
+        columns="BOOKTITLE;RESERVATIONDEADLINE" visible-columns="BOOKTITLE;RESERVATIONDEADLINE">
         <o-table-column attr="RESERVATIONDEADLINE" title="RESERVATIONDEADLINE" type="date" format="LL"></o-table-column>
 
     </o-table>
