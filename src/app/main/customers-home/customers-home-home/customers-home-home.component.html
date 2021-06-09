@@ -6,11 +6,17 @@
 
 <div>
     <o-table fxFlex attr="reservationsTable" service="reservations" entity="customerPendingReservations"
-        keys="CUSTOMERID" query-rows="20" title="{{ 'YOUR RESERVATIONS' | oTranslate }}" show-title="true"
+        keys="CUSTOMERID" query-rows="20" title="{{ 'PENDING RESERVATIONS' | oTranslate }}" show-title="true"
+        insert-button="no" refresh-button="no" delete-button="no" quick-filter="false"
+        columns="BOOKTITLE" visible-columns="BOOKTITLE">
+    </o-table>
+</div>
+<div>
+    <o-table fxFlex attr="reservationsTable" service="reservations" entity="customerAvailableReservations"
+        keys="CUSTOMERID" query-rows="20" title="{{ 'AVAILABLE RESERVATIONS' | oTranslate }}" show-title="true"
         insert-button="no" refresh-button="no" delete-button="no" quick-filter="false"
         columns="BOOKTITLE;RESERVATIONDEADLINE" visible-columns="BOOKTITLE;RESERVATIONDEADLINE">
         <o-table-column attr="RESERVATIONDEADLINE" title="RESERVATIONDEADLINE" type="date" format="LL"></o-table-column>
 
     </o-table>
-
 </div>

@@ -45,9 +45,11 @@
   "RESERVATIONS":"Reservas",
   "RESERVATIONID":"Id",
   "NEW RESERVATION":"Nueva Reserva",
+  "RESERVATION DEADLINE":"Fecha límite para la Reserva",
   "RESERVATIONS_EXPIRED_TODAY": "Listado Reservas Caducadas Hoy",
   "LIST OF FIRST RESERVATIONS OF THE LENDING COPIES":"LISTADO DE PRIMERAS RESERVAS DE LOS EJEMPLARES DEL PRESTAMO",
-  "YOUR RESERVATIONS":"Tus Reservas",
+  "PENDING RESERVATIONS":"Reservas en Espera",
+  "AVAILABLE RESERVATIONS":"Reservas Disponibles",
 
   "LENDINGS": "Prestamos",
   "LENDINGID": "Id",

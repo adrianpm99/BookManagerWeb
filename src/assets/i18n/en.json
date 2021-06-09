@@ -45,9 +45,11 @@
   "RESERVATIONS":"Reservations",
   "RESERVATIONID":"Id",
   "NEW RESERVATION":"New Reservation",
+  "RESERVATIONDEADLINE":"Reservation Deadline",
   "RESERVATIONS_EXPIRED_TODAY": "Reservations Expired Today",
   "LIST OF FIRST RESERVATIONS OF THE LENDING COPIES":"LIST OF FIRST RESERVATIONS OF THE LENDING COPIES",
-  "YOUR RESERVATIONS":"Your Reservations",
+  "PENDING RESERVATIONS":"Pending Reservations",
+  "AVAILABLE RESERVATIONS":"Available Reservations",
 
   "LENDINGS": "Lendings",
   "LENDINGID": "Id",
