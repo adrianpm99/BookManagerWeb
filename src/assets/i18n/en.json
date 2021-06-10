@@ -2,6 +2,8 @@
   "APP_TITLE": "Book Manager",
   "VERSION": "Version",
   "EXAMPLE_LOGIN_INFO": "Use this user and password for login",
+  "SIGN_UP_TEXT": "New to the library? Click the button to sign up",
+  "SIGN_UP": "Sign Up",
   "USERNAME": "Username",
   "PASSWORD": "Password",
   "LOGIN": "Login",
