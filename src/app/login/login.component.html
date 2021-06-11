@@ -21,9 +21,15 @@
       <div layout-padding></div>
       <div layout-padding></div>
       <div fxLayout="column" fxLayoutAlign="center center" layout-padding>
-        <span class="title_text">{{ 'EXAMPLE_LOGIN_INFO' | oTranslate }}:</span>
+        <!--<span class="title_text">{{ 'EXAMPLE_LOGIN_INFO' | oTranslate }}:</span>
         <span class="dark_text">{{ 'USERNAME' | oTranslate }} : demo</span>
         <span class="dark_text">{{ 'PASSWORD' | oTranslate }} : demouser</span>
+        -->
+        <p align="center">
+          <span type="FLAT" class="title_text" fxLayoutAlign="center">{{'SIGN_UP_TEXT' | oTranslate}}</span>
+
+        </p>
+        <button mat-raised-button color="primary" attr="newlogin" (click)="signUp()" type="FLAT" layout-padding color="accent">{{'SIGN_UP' | oTranslate}} </button>
       </div>
     </form>
 
