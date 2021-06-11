@@ -8,6 +8,10 @@ import { FormControl, ValidationErrors } from '@angular/forms';
 })
 export class CustomersAddComponent implements OnInit {
 
+  getValue() {
+    return 'password';
+  }
+
   constructor() { }
 
   ngOnInit() {
