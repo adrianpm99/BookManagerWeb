@@ -3,7 +3,19 @@
         {{'WELCOME' | oTranslate}}
     </p>
 </div>
+<div>
+  <o-table fxFlex attr="lendingsTable" service="lendings" entity="lendingDetails" delete-button="no"
+               keys="LENDINGID"  query-rows="20"     refresh-button="no" quick-filter="false"
+               title="{{ 'LENDINGS' | oTranslate}}" show-title="true" insert-button="no" detail-form-route="/main/lendings/"
+               columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE;CUSTOMERNAME;CUSTOMERSURNAME"
+               visible-columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE">
+            <o-table-column attr="LENDINGID" title="LENDINGID" width="50px"></o-table-column>
+            <o-table-column attr="LENDINGDATE" title="LENDINGDATE" type="date" format="LL" width="500px"></o-table-column>
+            <o-table-column attr="LENDINGDEADLINE" title="LENDINGDEADLINE" type="date" format="LL"width="500px"></o-table-column>
+            <o-table-column attr="LENDINGRETURNDATE" title="LENDINGRETURNDATE" type="date" format="LL"width="500px"></o-table-column>
 
+   </o-table>
+  </div>
 <div>
     <o-table fxFlex attr="reservationsTable" service="reservations" entity="customerPendingReservations"
         keys="CUSTOMERID" query-rows="20" title="{{ 'PENDING RESERVATIONS' | oTranslate }}" show-title="true"
