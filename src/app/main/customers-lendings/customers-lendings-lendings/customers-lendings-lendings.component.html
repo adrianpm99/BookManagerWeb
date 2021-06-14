@@ -1,0 +1,14 @@
+<div>
+  <o-table fxFlex attr="lendingsTable" service="lendings" entity="lendingsForUserLogin" delete-button="no"
+               keys="LENDINGID"  query-rows="20"     refresh-button="no" quick-filter="false"
+               title="{{ 'LENDINGS' | oTranslate}}" show-title="true" insert-button="no" detail-form-route="/main/lendings/"
+               columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE"
+               visible-columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE">
+            <o-table-column attr="LENDINGID" title="LENDINGID" width="50px"></o-table-column>
+            <o-table-column attr="LENDINGDATE" title="LENDINGDATE" type="date" format="LL" width="500px"></o-table-column>
+            <o-table-column attr="LENDINGDEADLINE" title="LENDINGDEADLINE" type="date" format="LL"width="500px"></o-table-column>
+            <o-table-column attr="LENDINGRETURNDATE" title="LENDINGRETURNDATE" type="date" format="LL"width="500px"></o-table-column>
+
+   </o-table>
+  </div>
+

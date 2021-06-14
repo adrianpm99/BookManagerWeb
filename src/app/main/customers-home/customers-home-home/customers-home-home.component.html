@@ -4,11 +4,11 @@
     </p>
 </div>
 <div>
-  <o-table fxFlex attr="lendingsTable" service="lendings" entity="lendingDetails" delete-button="no"
+  <o-table fxFlex attr="lendingsTable" service="lendings" entity="lendingsInProgressForUserLogin" delete-button="no"
                keys="LENDINGID"  query-rows="20"     refresh-button="no" quick-filter="false"
                title="{{ 'LENDINGS' | oTranslate}}" show-title="true" insert-button="no" detail-form-route="/main/lendings/"
-               columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE;CUSTOMERNAME;CUSTOMERSURNAME"
-               visible-columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE">
+               columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE;LENDINGRETURNDATE"
+               visible-columns="LENDINGID;LENDINGDATE;LENDINGDEADLINE">
             <o-table-column attr="LENDINGID" title="LENDINGID" width="50px"></o-table-column>
             <o-table-column attr="LENDINGDATE" title="LENDINGDATE" type="date" format="LL" width="500px"></o-table-column>
             <o-table-column attr="LENDINGDEADLINE" title="LENDINGDEADLINE" type="date" format="LL"width="500px"></o-table-column>
