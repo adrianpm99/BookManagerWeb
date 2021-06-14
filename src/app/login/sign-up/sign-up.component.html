@@ -1,10 +1,10 @@
 <o-form service="customers" entity="customer" keys="CUSTOMERID"
  header-actions="I;U" show-header-navigation="no" label-header="CUSTOMER_ADD">
 
-<o-column title="{{ 'CUSTOMER_DETAILS' | oTranslate }}" fxFlex>
+<o-column title="{{ 'CUSTOMER_DETAILS' }}" fxFlex>
 
   <o-text-input attr="USERNAME" style="width:20%;" fxFlex required="yes" max-length="50"></o-text-input>
-  <o-password-input attr="PASSWORD" style="width:20%;" label="PASSWORD" [data]="getValue()" read-only="no" required="yes" ></o-password-input>
+  <o-password-input attr="PASSWORD" style="width:20%;" [data]="getValue()" label="PASSWORD"  read-only="no" required="yes" ></o-password-input>
 
   <o-row>
     <o-text-input attr="CUSTOMERNAME" fxFlex required="yes" max-length="50"></o-text-input>
@@ -22,3 +22,4 @@
   </o-row>
 </o-column>
 </o-form>
+

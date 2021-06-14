@@ -21,6 +21,9 @@ export const SERVICE_CONFIG: Object = {
   'copylendings': {
     'path': '/copylendings'
   },
+  'sign-up': {
+    'path': '/sign-up'
+  },
   'permissions': {
     'path': '/permissions/get'
 

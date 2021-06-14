@@ -57,6 +57,9 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['../'], { relativeTo: this.actRoute });
     }
   }
+  signUp(){
+    this.router.navigate(['sign-up'],{ relativeTo: this.actRoute });
+  }
 
   login() {
     if (!this.loginForm.valid) {
