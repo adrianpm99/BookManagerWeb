@@ -1,4 +1,4 @@
-<o-form attr="LISTBOOKS" editable-detail="no" service="books" entity="book" keys="BOOKID" header-actions="R;I;U;"
+<o-form attr="books_form_detail" editable-detail="no" service="books" entity="book" keys="BOOKID" header-actions="R;I;U;"
   show-header-navigation="no">
   <o-row>
     <o-text-input attr="BOOKID" sql-type="INTEGER"></o-text-input>
@@ -21,53 +21,17 @@
       <o-textarea-input attr="BOOKDESCRIPTION" fxFlex></o-textarea-input>
     </o-row>
   </o-column>
-  <br>
-  <o-form-layout-manager title="LISTADO DE EJEMPLARES" mode="dialog">
-    <o-form-layout-dialog-options width="700px" height="500px" disable-close="false"></o-form-layout-dialog-options>
-    <div fxFlex>
+
+
       <o-table fxFlex attr="copysTable" title="LISTADO DE EJEMPLARES" service="copys" entity="copiesWithShelving" keys="COPYID"
-        columns="COPYCODE;BOOKID;SHELVINGPUBLICNAME;COPYNOTES" visible-columns="COPYCODE;SHELVINGPUBLICNAME;COPYNOTES" 
-        query-rows="20" quick-filter="false" export-button="false" delete-button="false" refresh-button="false" 
+        columns="COPYCODE;BOOKID;SHELVINGPUBLICNAME;COPYNOTES" visible-columns="COPYCODE;SHELVINGPUBLICNAME;COPYNOTES"
+        query-rows="20" quick-filter="false" export-button="false" delete-button="false" refresh-button="false"
         show-title="true" parent-keys="BOOKID" insert-button="true" insert-form-route="copies/new" edit-form-route="copies/edit">
       </o-table>
-    </div>
-  </o-form-layout-manager>
+
+
 </o-form>
 
 
 
 
-<!-- This is the original code which always works (better keep it as backup)
-<o-form editable-detail="no" service="books" entity="book" keys="BOOKID" header-actions="R;I;U;D"
-  show-header-navigation="no">
-  <o-row>
-    <o-text-input attr="BOOKID" sql-type="INTEGER"></o-text-input>
-  </o-row>
-  <o-row>
-    <o-integer-input attr="BOOKISBN" class="input-padding"></o-integer-input>
-  </o-row>
-  <o-column title-label="BOOK_DETAILS" fxFlex>
-    <o-row>
-      <o-text-input class="input-padding" attr="BOOKTITLE"></o-text-input>
-      <o-text-input class="input-padding" attr="BOOKAUTHOR"></o-text-input>
-      <o-integer-input attr="BOOKPUBLICATIONYEAR"></o-integer-input>
-    </o-row>
-    <o-row>
-      <o-text-input class="input-padding" attr="BOOKEDITORIAL"></o-text-input>
-      <o-integer-input attr="BOOKEDITION" class="input-padding"></o-integer-input>
-      <o-integer-input attr="BOOKPAGENUMBER"></o-integer-input>
-    </o-row>
-    <o-row>
-      <o-textarea-input attr="BOOKDESCRIPTION" fxFlex=40></o-textarea-input>
-    </o-row>
-  </o-column>
-  <br>
-  <div fxFlex>
-    <o-table fxFlex attr="copysTable" title="LISTADO DE EJEMPLARES" service="copys" entity="copy" keys="COPYID"
-      columns="COPYID;BOOKID;COPYNOTES" visible-columns="COPYID;COPYNOTES" query-rows="20" quick-filter="false"
-      export-button="false" delete-button="false" refresh-button="false" show-title="true" parent-keys="BOOKID"
-      insert-button="true" insert-form-route="copies/new">
-    </o-table>
-  </div>
-</o-form>
--->

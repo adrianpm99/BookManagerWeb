@@ -11,50 +11,30 @@
             ],
             "actions":
             [
-                {"attr":"update", "visible":false, "enabled":false},
-                {"attr":"delete", "visible":false, "enabled":false},
                 {"attr":"insert", "visible":false, "false":false},
-                {"attr":"refresh", "visible":false, "enabled":false},
-                {"attr":"detail", "visible":true, "enabled":true}
+                {"attr":"refresh", "visible":false, "enabled":false}
+
             ]
         },
         {
-            "attr":"LISTBOOKS", "selector":"o-form", "components":
-            [
-                {"attr":"BOOKID", "visible":true, "enabled":true},
-                {"attr":"BOOKISBN", "visible":true, "enabled":true},
-                {"attr":"BOOKTITLE", "visible":true, "enabled":true },
-                {"attr":"BOOKAUTHOR", "visible":true, "enabled":true},
-                {"attr":"BOOKPUBLICATIONYEAR", "visible":true, "enabled":true},
-                {"attr":"BOOKEDITORIAL", "visible":true, "enabled":true},
-                {"attr":"BOOKEDITION", "visible":true, "enabled":true},
-                {"attr":"BOOKPAGENUMBER", "visible":true, "enabled":true},
-                {"attr":"BOOKDESCRIPTION", "visible":true, "enabled":true}
-            ],
-            "actions":
-            [
-                {"attr":"update", "visible":false, "enabled":false},
-                {"attr":"delete", "visible":false, "enabled":false},
-                {"attr":"insert", "visible":false, "false":false},
-                {"attr":"refresh", "visible":false, "enabled":false},
-                {"attr":"detail", "visible":true, "enabled":true}
-            ]
+          "attr":"copysTable", "selector":"o-table", "columns":
+          [
+              {"attr":"COPYCODE", "visible":true, "enabled":true},
+              {"attr":"SHELVINGPUBLICNAME", "visible":true, "enabled":true},
+              {"attr":"COPYNOTES", "visible":true, "enabled":true}
+          ],
+          "actions":
+          [
+             {"attr":"insert", "visible":false, "false":false}
+          ]
+
         },
         {
-            "attr":"copysTable", "selector":"o-table", "columns":
-            [
-                {"attr":"COPYCODE", "visible":true, "enabled":true},
-                {"attr":"SHELVINGPUBLICNAME", "visible":true, "enabled":true},
-                {"attr":"COPYNOTES", "visible":true, "enabled":true}
-            ],
-            "actions":
-            [
-                {"attr":"update", "visible":false, "enabled":false},
-                {"attr":"delete", "visible":false, "enabled":false},
-                {"attr":"insert", "visible":false, "false":false},
-                {"attr":"refresh", "visible":false, "enabled":false},
-                {"attr":"detail", "visible":true, "enabled":true}
-            ]
+          "attr":"books_form_detail",
+          "selector": "o-form",
+          "actions": [
+            { "attr": "update", "visible": false, "enabled": false }
+          ]
         }
     ],
     "menu":
