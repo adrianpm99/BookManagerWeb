@@ -48,7 +48,7 @@ export class LendingsCloseComponent implements OnInit {
        "LENDINGID" : id
       },
       "columns": [
-       "copyid","reservationid"
+       "copyid","reservationid","copycode"
       ]
     };
 
@@ -60,7 +60,7 @@ export class LendingsCloseComponent implements OnInit {
       for (let key in copies) {
 
         reservationId= copies[key]["reservationid"];
-        copyId = copies[key]["copyid"];
+        copyId = copies[key]["copycode"];
         const bodyReservation = {
           "filter": {
            "reservationid" : reservationId
