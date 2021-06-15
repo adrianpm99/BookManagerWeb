@@ -11,5 +11,7 @@ export const MENU_CONFIG: MenuRootItem[] = [
   { id: 'reservations', name: 'RESERVATIONS', icon: 'book_online', route: '/main/reservations' },
   { id: 'lendings', name: 'LENDINGS', icon: 'book', route: '/main/lendings' },
   { id: 'customers-lendings', name:'CUSTOMERS_LENDINGS', icon:'book', route: '/main/customers-lendings'},
-  { id: 'logout', name: 'LOGOUT', route: '/login', icon: 'power_settings_new', confirm: 'yes' }
+  { id: 'customers-reservations', name:'CUSTOMERS_RESERVATIONS', icon:'book_online', route: '/main/customers-reservations'},
+  { id: 'logout', name: 'LOGOUT', route: '/login', icon: 'power_settings_new', confirm: 'yes' },
+  
 ];
