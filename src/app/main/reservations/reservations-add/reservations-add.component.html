@@ -2,7 +2,7 @@
   <o-row>
     <o-column title-label="RESERVATION_INFORMATION" fxFlex>
       <o-combo attr="BOOKID" class="input-padding" service="reservations" entity="reservationAvailable" keys="COPYID" columns="COPYID;BOOKID;BOOKTITLE"
-          visible-columns="BOOKID;BOOKTITLE"  value-column="COPYID" searchable="yes">
+          visible-columns="BOOKID;BOOKTITLE"  value-column="BOOKID" searchable="yes">
       </o-combo>
       <o-row>
         <o-combo attr="CUSTOMERID" class="input-padding" service="customers" entity="customer" keys="CUSTOMERID" columns="CUSTOMERID;CUSTOMERNAME;CUSTOMERSURNAME"
