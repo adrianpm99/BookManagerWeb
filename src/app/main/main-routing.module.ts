@@ -10,6 +10,9 @@ import { ReservationsModule } from './reservations/reservations.module';
 import { LendingsModule } from './lendings/lendings.module';
 import { CopiesModule } from './copies/copies.module';
 import { CustomersHomeModule } from './customers-home/customers-home.module';
+import { CustomersLendingsModule } from './customers-lendings/customers-lendings.module';
+import { CustomersReservationsModule } from './customers-reservations/customers-reservations.module';
+import { CustomersCustomersModule } from './customers-customers/customers-customers.module';
 
 export function loadBooksModule() { return BooksModule; }
 export function loadCustomersModule() { return CustomersModule; }
@@ -17,6 +20,9 @@ export function loadReservationsModule() { return ReservationsModule; }
 export function loadLendingsModule() { return LendingsModule; }
 export function loadCopiesModule() { return CopiesModule;}
 export function loadCustomersHomeModule() { return CustomersHomeModule;}
+export function loadCustomersLendingsModule() { return CustomersLendingsModule;}
+export function loadCustomersReservationsModule() { return CustomersReservationsModule;}
+export function loadCustomersCustomersModule() { return CustomersCustomersModule;}
 
 export const routes: Routes = [
   {
@@ -31,7 +37,11 @@ export const routes: Routes = [
       { path: 'reservations', loadChildren: loadReservationsModule },
       { path: 'lendings', loadChildren: loadLendingsModule },
       { path: 'copys', loadChildren: loadCopiesModule },
-      { path: 'customers-home', loadChildren: loadCustomersHomeModule }
+      { path: 'customers-home', loadChildren: loadCustomersHomeModule },
+      { path: 'customers-lendings', loadChildren: loadCustomersLendingsModule },
+      { path: 'customers-reservations', loadChildren: loadCustomersReservationsModule },
+      { path: 'customers-customers', loadChildren: loadCustomersCustomersModule }
+
     ]
   }
 ];
