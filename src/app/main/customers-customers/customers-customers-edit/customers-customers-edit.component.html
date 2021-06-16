@@ -1,0 +1,21 @@
+<o-form editable-detail="yes" service="customers" entity="customer"
+keys="CUSTOMERID" header-actions="R;U" show-header-navigation="no">
+<o-column title="{{ 'EDIT_CUSTOMER_DETAILS' | oTranslate}}" fxFlex>
+    <o-row>
+        <o-integer-input attr="CUSTOMERID" enabled="no" fxFlex></o-integer-input>
+    </o-row>
+    <o-row>
+      <o-text-input attr="CUSTOMERNAME" fxFlex required="yes" max-length="50"></o-text-input>
+      <o-text-input attr="CUSTOMERSURNAME" fxFlex required="yes" max-length="50"></o-text-input>
+      <o-nif-input attr="CUSTOMERDNI" fxFlex required="yes"></o-nif-input>
+    </o-row>
+    <o-row>
+      <o-text-input attr="CUSTOMERADDRESS" fxFlex max-length="200"></o-text-input>
+      <o-text-input attr="CUSTOMERTLF" fxFlex min-length="9" max-length="9">
+        <o-validator error-name="CustomerPhoneFormat" error-text="ERROR_CUSTOMER_PHONE_FORMAT" [validator-function]="validCustomerPhone"></o-validator>
+      </o-text-input>
+      <o-email-input attr="CUSTOMEREMAIL" fxFlex max-length="100"></o-email-input>
+    </o-row>
+</o-column>
+</o-form>
+
