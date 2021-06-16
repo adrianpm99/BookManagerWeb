@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { OButtonComponent, ODateInputComponent } from 'ontimize-web-ngx';
+import { LoginService } from 'ontimize-web-ngx';
 
 
 @Component({
@@ -12,18 +13,24 @@ export class LendingsDetailComponent implements OnInit {
 
   @ViewChild('lendingReturnDate', { read: ODateInputComponent, static: false }) lendingReturnDate: ODateInputComponent;
   @ViewChild('closeLending', {read: OButtonComponent, static: false}) closeLendingBtn: OButtonComponent;
-  isButtonVisible = true;
+  @ViewChild('newReservation', {read: OButtonComponent, static: false}) newReservationBtn: OButtonComponent;
+  isButtonCloseLendingVisible = true;
+  isButtonNewReservationVisible = true;
 
   constructor(private router: Router,
-    private actRoute: ActivatedRoute) {
+    private actRoute: ActivatedRoute, private loginService:LoginService) {
+
    }
 
   ngOnInit() {}
 
   ngAfterViewInit() {
     setTimeout(() => {
-      if(this.lendingReturnDate.isEmpty() == false){
-        this.isButtonVisible = false;
+      if(this.lendingReturnDate.isEmpty() == false ){
+        this.isButtonCloseLendingVisible = false;
+      }else if (this.loginService.user != "demo"){
+        this.isButtonCloseLendingVisible = false
+        this.isButtonNewReservationVisible = false
       }
     }, 80);
   }
