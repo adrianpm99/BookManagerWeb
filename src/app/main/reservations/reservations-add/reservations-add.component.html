@@ -1,7 +1,7 @@
 <o-form service="reservations" entity="reservation" keys="RESERVATIONID" header-actions="R;I;U;D" show-header-navigation="no">
   <o-row>
     <o-column title-label="RESERVATION_INFORMATION" fxFlex>
-      <o-combo attr="BOOKID" class="input-padding" service="reservations" entity="reservationAvailable" keys="COPYID" columns="COPYID;BOOKID;BOOKTITLE"
+      <o-combo attr="BOOKID" class="input-padding" service="reservations" entity="reservationAvailable" keys="BOOKID" columns="BOOKID;BOOKTITLE"
           visible-columns="BOOKID;BOOKTITLE"  value-column="BOOKID" searchable="yes">
       </o-combo>
       <o-row>
