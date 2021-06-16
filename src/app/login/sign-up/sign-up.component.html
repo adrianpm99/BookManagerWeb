@@ -1,10 +1,13 @@
-<o-form service="customers" entity="customer" keys="CUSTOMERID"
- header-actions="I;U" show-header-navigation="no" label-header="CUSTOMER_ADD">
-
-<o-column title="{{ 'CUSTOMER_SIGN_UP' }}" fxFlex>
-
-  <o-text-input attr="USERNAME" style="width:20%;" fxFlex required="yes" max-length="50"></o-text-input>
-  <o-password-input attr="PASSWORD" style="width:20%;" label="PASSWORD" read-only="no" required="yes"></o-password-input>
-</o-column>
-</o-form>
+<!--attribute label-header="CUSTOMER_ADD" was removed. Innecessary for now-->
+<form [formGroup]="signUpForm" (ngSubmit)="sign_up()" style="margin: 10% 35% 0 35%;">
+  <o-column title="{{ 'CUSTOMER_SIGN_UP' }}" fxFlex>
+    <mat-form-field>
+      <input matInput class="mat-input" type="text" attr="USERNAME" formControlName="username" required="yes" max-length="50">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput class="mat-input" type="password" attr="PASSWORD" formControlName="password" label="PASSWORD" read-only="no" required="yes">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">{{ 'SIGN_UP' | oTranslate }}</button>
+  </o-column>
+</form>
 
