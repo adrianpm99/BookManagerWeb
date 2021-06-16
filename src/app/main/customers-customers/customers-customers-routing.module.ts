@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CustomersCustomersHomeComponent } from './customers-customers-home/customers-customers-home.component';
-import { CustomersDetailComponent } from '../customers/customers-detail/customers-detail.component';
-import { CustomersEditComponent } from '../customers/customers-edit/customers-edit.component';
+import { CustomersCustomersDetailComponent } from './customers-customers-detail/customers-customers-detail.component';
+import { CustomersCustomersEditComponent } from './customers-customers-edit/customers-customers-edit.component';
+
 
 const routes: Routes = [
   {path : '', component: CustomersCustomersHomeComponent},
-  {path: ':CUSTOMERID', component: CustomersDetailComponent },
-  {path: ':CUSTOMERID/edit', component: CustomersEditComponent }
+  {path: ':CUSTOMERID', component: CustomersCustomersDetailComponent },
+  {path: ':CUSTOMERID/edit', component: CustomersCustomersEditComponent }
 ];
 
 @NgModule({
