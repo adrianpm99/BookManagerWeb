@@ -40,7 +40,8 @@ export class LendingsCloseComponent implements OnInit {
     let dateNow = new Date(date + 259200000);
     let reservationId;
     let copyId;
-    let alert = "Mueva los libros: "
+    let copyCode;
+    let alert = "Mueva los ejemplares: "
     let sessionInfo = this.loginService.getSessionInfo();
     const headers = {'Authorization': 'Bearer ' + sessionInfo.id};
     const bodyReservationCurrent = {
@@ -60,7 +61,8 @@ export class LendingsCloseComponent implements OnInit {
       for (let key in copies) {
 
         reservationId= copies[key]["reservationid"];
-        copyId = copies[key]["copycode"];
+        copyId = copies[key]["copyid"];
+        copyCode = copies[key]["copycode"]
         const bodyReservation = {
           "filter": {
            "reservationid" : reservationId
@@ -86,7 +88,7 @@ export class LendingsCloseComponent implements OnInit {
         this.http.put('http://localhost:33333/reservations/reservation', bodyReservation, { headers }).subscribe();
         //Change the location of the copy to 2
         this.http.put('http://localhost:33333/copyshelvings/copyShelving', bodyCopyShelving, { headers }).subscribe();
-        alert +=  " '"+ copyId + "' ";
+        alert +=  " '"+ copyCode + "' ";
 
       }//for
       //Shows a dialog message with the copys that were reservated
