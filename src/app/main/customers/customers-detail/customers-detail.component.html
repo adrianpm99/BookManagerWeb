@@ -1,4 +1,4 @@
-<o-form editable-detail="no" service="customers" entity="customer"
+<o-form editable-detail="no" service="customers" entity="customerUserData"
 keys="CUSTOMERID" header-actions="R;I;U" show-header-navigation="no">
   <div o-form-toolbar-buttons>
     <button type="button" class="o-form-toolbar-button" mat-stroked-button (click)="resetPassword()">
@@ -8,7 +8,8 @@ keys="CUSTOMERID" header-actions="R;I;U" show-header-navigation="no">
     </div>
 <o-column title="{{ 'CUSTOMER_INFORMATION' | oTranslate}}" fxFlex>
     <o-row>
-        <o-integer-input attr="CUSTOMERID" fxFlex></o-integer-input>
+        <o-integer-input attr="CUSTOMERID"></o-integer-input>
+        <o-text-input attr="USER_" fxFlex></o-text-input>
     </o-row>
     <o-row>
         <o-text-input attr="CUSTOMERNAME" fxFlex></o-text-input>
