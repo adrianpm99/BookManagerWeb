@@ -23,7 +23,7 @@
   </o-column>
 
 
-      <o-table fxFlex attr="copysTable" title="LISTADO DE EJEMPLARES" service="copys" entity="copiesWithShelving" keys="COPYID"
+      <o-table fxFlex attr="copysTable" title="COPIES_LIST" service="copys" entity="copiesWithShelving" keys="COPYID"
         columns="COPYCODE;BOOKID;SHELVINGPUBLICNAME;COPYNOTES" visible-columns="COPYCODE;SHELVINGPUBLICNAME;COPYNOTES"
         query-rows="20" quick-filter="false" export-button="false" delete-button="false" refresh-button="false"
         show-title="true" parent-keys="BOOKID" insert-button="true" insert-form-route="copies/new" edit-form-route="copies/edit">

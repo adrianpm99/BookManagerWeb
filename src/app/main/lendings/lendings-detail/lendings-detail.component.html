@@ -25,7 +25,7 @@
       <o-text-input attr="LENDINGNOTES"  fxFlex></o-text-input>
     </o-row>
   </o-column>
-  <o-table fxFlex attr="listCopies" title="LISTADO DE EJEMPLARES" service="lendings" entity="copiesFromLending"
+  <o-table fxFlex attr="listCopies" title="COPIES_LIST" service="lendings" entity="copiesFromLending"
     keys="LENDINGID" columns="LENDINGID;COPYID;COPYCODE;COPYNOTES;BOOKTITLE" parent-keys="LENDINGID"
     visible-columns="COPYCODE;BOOKTITLE;COPYNOTES"  delete-button="no" show-title="true">
   </o-table>

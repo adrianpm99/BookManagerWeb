@@ -37,7 +37,7 @@
   "BOOK_DETAILS": "Detalles del libro",
   "BOOKSAVAILABLERESERVATION": "Libros disponibles para reserva",
 
-  "COPIES LIST": "LISTADO DE EJEMPLARES",
+  "COPIES_LIST": "LISTADO DE EJEMPLARES",
   "COPYID": "Id del ejemplar",
   "COPYNOTES": "Notas del ejemplar",
   "COPIESAVAILABLE": "Ejemplares disponibles",
@@ -90,5 +90,7 @@
 
   "CUSTOMER_SIGN_UP": "REGISTRO DE NUEVO USUARIO",
 
-  "USER_":"Nombre de la cuenta"
+  "USER_":"Nombre de la cuenta",
+
+  "copies_list": "LISTADO DE EJEMPLARES"
 }
