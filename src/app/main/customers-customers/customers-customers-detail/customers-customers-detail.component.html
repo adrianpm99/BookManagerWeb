@@ -1,5 +1,5 @@
-<o-form editable-detail="no" service="customers" entity="customer"
-keys="CUSTOMERID" header-actions="R;I;U" show-header-navigation="no">
+<o-form editable-detail="yes" service="customers" entity="customerMyData"
+keys="CUSTOMERID" header-actions="R;U" show-header-navigation="no">
 <o-column title="{{ 'CUSTOMER_INFORMATION' | oTranslate}}" fxFlex>
     <o-row>
         <o-integer-input attr="CUSTOMERID" fxFlex></o-integer-input>
@@ -13,6 +13,9 @@ keys="CUSTOMERID" header-actions="R;I;U" show-header-navigation="no">
         <o-text-input attr="CUSTOMERADDRESS" fxFlex></o-text-input>
         <o-text-input attr="CUSTOMERTLF" fxFlex></o-text-input>
         <o-email-input attr="CUSTOMEREMAIL" fxFlex></o-email-input>
+    </o-row>
+    <o-row>
+      <o-password-input attr="PASSWORD" ></o-password-input>
     </o-row>
 </o-column>
 </o-form>
