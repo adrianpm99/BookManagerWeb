@@ -64,6 +64,7 @@
   "CLOSE LENDING": "Cerrar Prestamo",
   "LENDINGS_EXPIRED_TODAY": "Listado Prestamos Vencidos Hoy",
   "LENDING RETURN (INSERT DATA IN THE ANNOTATIONS FIELD)": "Devolucion prestamos (Inserte datos en el campo de anotaciones)",
+  "OPEN_LENDINGS":"Préstamos en curso",
 
   "CUSTOMERS": "Usuarios",
   "CUSTOMERID":"USUARIO ID",
